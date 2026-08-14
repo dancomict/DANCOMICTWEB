@@ -9,14 +9,61 @@
 <meta name="author" content="DANCOM ICT Centre"/>
 <meta property="og:title" content="DANCOM ICT Centre | Fast · Reliable · One-Stop Digital Services"/>
 <meta property="og:description" content="Fast, reliable, and affordable ICT training, printing, government services, branding and more — all under one roof in Rumuruti, Laikipia County."/>
-<meta property="og:image" content="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg"/>
+<meta property="og:image" content="https://dancomict.co.ke/logo2.png"/>
 <meta property="og:url" content="https://dancomict.co.ke"/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="DANCOM ICT Centre | Fast · Reliable · One-Stop Digital Services"/>
 <meta name="twitter:description" content="Fast, reliable, and affordable ICT training, printing, government services, branding and more — all under one roof in Rumuruti, Laikipia County."/>
-<meta name="twitter:image" content="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg"/>
+<meta name="twitter:image" content="https://dancomict.co.ke/logo2.png"/>
 <link rel="canonical" href="https://dancomict.co.ke"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "DANCOM ICT Centre",
+  "url": "https://dancomict.co.ke",
+  "logo": "https://dancomict.co.ke/logo2.png",
+  "image": "https://dancomict.co.ke/logo2.png",
+  "description": "Fast, reliable, and affordable ICT training, printing, government services, repairs, branding and more in Rumuruti, Laikipia County, Kenya.",
+  "telephone": ["+254795312248", "+254783709080"],
+  "email": "info@dancomict.co.ke",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Opposite Rumuruti Day Senior School",
+    "addressLocality": "Rumuruti",
+    "addressRegion": "Laikipia County",
+    "addressCountry": "KE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 0.2705,
+    "longitude": 36.5382
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "14:00",
+      "closes": "19:00"
+    }
+  ],
+  "priceRange": "KSh",
+  "foundingDate": "2021-05",
+  "sameAs": [
+    "https://www.facebook.com/share/1EDx4aVNoU/",
+    "https://www.tiktok.com/@dancomictcentre",
+    "https://youtube.com/@dancomict",
+    "https://g.co/kgs/3c8EFh2"
+  ]
+}
+</script>
 <link rel="icon" type="image/png" href="logo2.png"/>
 <link rel="apple-touch-icon" href="logo2.png"/>
 <style>
@@ -24,15 +71,16 @@
    ROOT — Century Gothic · Deep Navy · Gold
 ══════════════════════════════════════════ */
 :root{
-  --blue:#0A2472; --blue-mid:#1B3FA0; --blue-light:#2E5BE8;
-  --blue-pale:#EBF0FF; --blue-deep:#050E30;
-  --yellow:#FFD100; --yellow-deep:#E6B800; --yellow-pale:#FFFBE6;
-  --white:#FFFFFF; --off:#F8F9FF; --dark:#050E30;
-  --gray:#6B7280; --gray-light:#E5E7EB; --border:rgba(10,36,114,.1);
+  /* Brand: Navy #0D1B5C · Gold #C9A227 · Brilliant White #FFFFFF */
+  --blue:#0D1B5C; --blue-mid:#1A2F8A; --blue-light:#2952C4;
+  --blue-pale:#EAF0FF; --blue-deep:#060D30;
+  --yellow:#C9A227; --yellow-deep:#A8841A; --yellow-pale:#FDF6E3;
+  --white:#FFFFFF; --off:#F8FAFF; --dark:#060D30;
+  --gray:#6B7280; --gray-light:#E5E7EB; --border:rgba(13,27,92,.12);
   --font:'Century Gothic','CenturyGothic','Gill Sans MT','Gill Sans',Calibri,'Trebuchet MS',sans-serif;
   --nav-h:72px; --r:12px;
-  --shadow:0 4px 24px rgba(10,36,114,.09);
-  --shadow-lg:0 8px 40px rgba(10,36,114,.16);
+  --shadow:0 4px 24px rgba(13,27,92,.10);
+  --shadow-lg:0 8px 40px rgba(13,27,92,.18);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -424,6 +472,7 @@ footer ul a:hover{color:var(--yellow)}
   .faq-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
+.qa-grid{grid-template-columns:1fr 1fr!important}
   section{padding:60px 5%}
   .form-row,.footer-grid,.modules-list{grid-template-columns:1fr}
   .stats-bar{gap:20px}
@@ -433,6 +482,26 @@ footer ul a:hover{color:var(--yellow)}
   .socials-grid{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr 1fr}
 }
+
+/* ══ COURSE TABLE ══ */
+.course-table{display:flex;flex-direction:column}
+.ct-row{display:grid;grid-template-columns:2.5rem 1fr 7rem 7rem;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .2s}
+.ct-row:last-child{border-bottom:none}
+.ct-row:hover{background:rgba(201,162,39,.06)}
+.ct-pop{background:rgba(201,162,39,.08)}
+.ct-num{font-size:.8rem;font-weight:700;color:var(--yellow);opacity:.7}
+.ct-name{font-size:.88rem;font-weight:700;color:var(--white);line-height:1.3}
+.ct-sub{font-size:.74rem;font-weight:400;color:rgba(255,255,255,.55);margin-top:2px}
+.ct-badge{display:inline-block;font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:50px;margin-left:6px;vertical-align:middle}
+.ct-badge.pop{background:var(--yellow);color:var(--blue)}
+.ct-badge.val{background:rgba(34,197,94,.2);color:#4ade80;border:1px solid rgba(34,197,94,.3)}
+.ct-dur{font-size:.8rem;color:rgba(255,255,255,.65);text-align:center}
+.ct-fee{font-size:.95rem;font-weight:700;color:var(--yellow);text-align:right}
+@media(max-width:600px){
+  .ct-row{grid-template-columns:2rem 1fr 5rem 5.5rem;gap:8px;padding:10px 14px}
+  .ct-fee{font-size:.85rem}
+}
+
 </style>
 </head>
 <body>
@@ -442,7 +511,7 @@ footer ul a:hover{color:var(--yellow)}
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
-    <div class="topbar-item">📍 Opposite Rumuruti Day Secondary School, Laikipia County</div>
+    <div class="topbar-item">📍 Opposite Rumuruti Day Senior School, Laikipia County</div>
     <div class="topbar-item">🕐 Mon–Sat 7:30AM–7PM &nbsp;|&nbsp; Sun 2PM–7PM</div>
   </div>
   <div class="topbar-right">
@@ -539,7 +608,25 @@ footer ul a:hover{color:var(--yellow)}
   <div class="stat-sep"></div>
   <div class="stat-item"><div class="stat-num">7/7</div><div class="stat-lbl">Days Open</div></div>
   <div class="stat-sep"></div>
-  <div class="stat-item"><div class="stat-num">KSh 4,500</div><div class="stat-lbl">ICT Certificate</div></div>
+  <div class="stat-item"><div class="stat-num">From KSh 4,500</div><div class="stat-lbl">ICT Training</div></div>
+</div>
+
+<!-- QUICK ACTION STRIP -->
+<div style="background:var(--white);padding:18px 5%;border-bottom:1px solid var(--gray-light)">
+  <div class="qa-grid" style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <a href="#services" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.6rem">🖨️</span>Printing &amp; Cyber
+    </a>
+    <a href="#services" onclick="document.querySelector('#services').scrollIntoView();return false;" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.6rem">🔧</span>Repairs
+    </a>
+    <a href="#classes" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.6rem">🎓</span>ICT Classes
+    </a>
+    <a href="#govt" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.6rem">🌐</span>Gov't Services
+    </a>
+  </div>
 </div>
 
 <!-- FIND US -->
@@ -554,32 +641,32 @@ footer ul a:hover{color:var(--yellow)}
 <!-- TICKER -->
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker">
-    <span>Bulk Printing</span><span>eCitizen Services</span><span>NTSA Services</span><span>ICT Training</span><span>Graphic Design</span><span>Instant Passports</span><span>HELB Application</span><span>Lamination &amp; Binding</span><span>Visa Application</span><span>Digital Marketing</span><span>Web &amp; Digital Setup</span><span>Branding Services</span><span>KRA / iTax</span><span>NSSF Services</span><span>CRB Clearance</span>
-    <span>Bulk Printing</span><span>eCitizen Services</span><span>NTSA Services</span><span>ICT Training</span><span>Graphic Design</span><span>Instant Passports</span><span>HELB Application</span><span>Lamination &amp; Binding</span><span>Visa Application</span><span>Digital Marketing</span><span>Web &amp; Digital Setup</span><span>Branding Services</span><span>KRA / iTax</span><span>NSSF Services</span><span>CRB Clearance</span>
+    <span>Bulk Printing</span><span>eCitizen Services</span><span>NTSA Services</span><span>ICT Training</span><span>Graphic Design</span><span>Instant Passports</span><span>HELB Application</span><span>KUCCPS</span><span>SHA Services</span><span>Lamination &amp; Binding</span><span>Visa Application</span><span>Digital Marketing</span><span>Web &amp; Digital Setup</span><span>Branding Services</span><span>KRA / iTax</span><span>NSSF Services</span><span>CRB Clearance</span><span>Computer Repair</span><span>Phone Repair</span><span>Printer Repair</span><span>WiFi Hotspot</span><span>Gaming</span>
+    <span>Bulk Printing</span><span>eCitizen Services</span><span>NTSA Services</span><span>ICT Training</span><span>Graphic Design</span><span>Instant Passports</span><span>HELB Application</span><span>KUCCPS</span><span>SHA Services</span><span>Lamination &amp; Binding</span><span>Visa Application</span><span>Digital Marketing</span><span>Web &amp; Digital Setup</span><span>Branding Services</span><span>KRA / iTax</span><span>NSSF Services</span><span>CRB Clearance</span><span>Computer Repair</span><span>Phone Repair</span><span>Printer Repair</span><span>WiFi Hotspot</span><span>Gaming</span>
   </div>
 </div>
 
 <!-- IMAGE MARQUEE -->
 <div class="img-mq-wrap" aria-hidden="true">
   <div class="img-mq" id="iMarq">
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM ICT Centre Banner" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="DANCOM Marketing Solutions" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="DANCOM Calendar 2026" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="DANCOM Calendar 2025" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="DANCOM Work" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="DANCOM Team" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="DANCOM Centre Rumuruti" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="DANCOM In Action" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="DANCOM Welcome 2026" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM ICT Centre Banner" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="DANCOM Marketing Solutions" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="DANCOM Calendar 2026" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="DANCOM Calendar 2025" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="DANCOM Work" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="DANCOM Team" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="DANCOM Centre Rumuruti" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="DANCOM In Action" loading="lazy" onclick="lb(this)"/>
+    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="DANCOM Welcome 2026" loading="lazy" onclick="lb(this)"/>
   </div>
 </div>
 
@@ -598,6 +685,19 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">📎</div><h3>Lamination &amp; Binding</h3><p>Document lamination, spiral binding, and hard cover finishing.</p></div>
     <div class="card"><div class="card-icon">🖊️</div><h3>Stationery</h3><p>Exercise books, pens, files, and a range of office supplies available.</p></div>
     <div class="card"><div class="card-icon">📱</div><h3>Phone Accessories</h3><p>Chargers, cables, screen protectors, earphones and more.</p></div>
+    <div class="card"><div class="card-icon">🎮</div><h3>Gaming</h3><p>Enjoy PC gaming sessions in a comfortable, fast, and well-equipped environment.</p></div>
+    <div class="card" style="border-color:var(--yellow)">
+      <div class="card-icon">📶</div>
+      <h3>High-Speed WiFi Hotspot</h3>
+      <p style="margin-bottom:10px">Up to 20Mbps. Fast, stable &amp; secure — perfect for browsing, study, work &amp; streaming.</p>
+      <div style="display:flex;flex-direction:column;gap:6px;font-size:.8rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 30 Minutes</span><strong style="color:var(--blue)">KSh 30</strong></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 1 Hour</span><strong style="color:var(--blue)">KSh 50</strong></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 3 Hours</span><strong style="color:var(--blue)">KSh 100</strong></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:var(--yellow);border-radius:6px;padding:5px 10px"><span style="font-weight:700;color:var(--blue)">🌟 Full Day (24hrs)</span><strong style="color:var(--blue)">KSh 300</strong></div>
+      </div>
+      <span class="ctag green" style="margin-top:8px">Pay As You Go · No Hidden Charges</span>
+    </div>
   </div>
   <div class="group-label reveal">🖨️ Printing, Branding &amp; Digital Marketing</div>
   <div class="cards-grid reveal" style="margin-bottom:40px">
@@ -616,6 +716,20 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">🏫</div><h3>HELB / HEF Application</h3><p>Higher Education Loans Board and Higher Education Fund applications.</p></div>
     <div class="card"><div class="card-icon">🌐</div><h3>Web &amp; Digital Setup</h3><p>Email setup, website creation, domain registration, and social media management.</p><span class="ctag">From KSh 2,500</span></div>
   </div>
+
+  <div class="group-label reveal">🔧 Repairs &amp; Technical Services</div>
+  <div class="cards-grid reveal" style="margin-bottom:16px">
+    <div class="card"><div class="card-icon">💻</div><h3>Computer &amp; Laptop Repair</h3><p>Hardware diagnosis, software troubleshooting, OS installation, driver fixes, and full servicing for all brands.</p><span class="ctag green">Same-day service</span></div>
+    <div class="card"><div class="card-icon">🖨️</div><h3>Printer Repair &amp; Servicing</h3><p>Printer maintenance, repair, ink system servicing, and full diagnostics for all major printer brands.</p></div>
+    <div class="card"><div class="card-icon">📱</div><h3>Phone &amp; Tablet Repair</h3><p>Screen replacement, charging port repairs, software fixes, factory resets, and full diagnostics.</p></div>
+    <div class="card"><div class="card-icon">🔌</div><h3>Electrical &amp; Electronic Repair</h3><p>TVs, amplifiers, power supplies, and general electronic equipment — diagnosed and repaired by our technical team.</p></div>
+    <div class="card"><div class="card-icon">🔬</div><h3>Micro-Soldering &amp; PCB Repair</h3><p>Advanced motherboard-level repairs, component replacement, PCB diagnostics, and micro-soldering for complex faults.</p><span class="ctag amber">Advanced</span></div>
+  </div>
+  <div style="margin-top:4px;margin-bottom:40px;padding:14px 18px;background:var(--blue-pale);border-radius:10px;border-left:3px solid #1877F2;font-size:.85rem;color:var(--blue)" class="reveal">
+    📸 <strong>See our latest repair jobs</strong> — before &amp; after photos, transformations, and recent customer jobs on our
+    <a href="https://www.facebook.com/share/1EDx4aVNoU/" target="_blank" rel="noopener" style="color:#1877F2;font-weight:700">Facebook page →</a>
+  </div>
+
 </section>
 
 <section id="advanced">
@@ -724,136 +838,177 @@ footer ul a:hover{color:var(--yellow)}
     <div class="govt-card reveal"><div class="card-icon">💼</div><h3>NSSF Services</h3><p>NSSF registration, contributions, and related social security services.</p></div>
     <div class="govt-card reveal"><div class="card-icon">🧾</div><h3>KRA / iTax</h3><p>PIN registration, tax returns, compliance certificates, and iTax support.</p></div>
     <div class="govt-card reveal"><div class="card-icon">🎓</div><h3>HELB / HEF</h3><p>Student loan applications and Higher Education Fund registrations.</p></div>
-    <div class="govt-card reveal"><div class="card-icon">📋</div><h3>eCitizen Account Setup</h3><p>New account registration, password recovery, and digital service activation.</p></div>
+    <div class="govt-card reveal"><div class="card-icon">🎓</div><h3>KUCCPS</h3><p>University and college placement applications, course selection, and admission guidance.</p></div>
+    <div class="govt-card reveal"><div class="card-icon">🏥</div><h3>SHA Services</h3><p>Social Health Authority registration, contributions, and health cover services (formerly NHIF).</p></div>
+    <div class="govt-card reveal"><div class="card-icon">📋</div><h3>eCitizen Account Setup</h3><p>New account creation, phone number change, BRS Services, NCPWD Registration, Church Registration.</p></div>
+    <div class="govt-card reveal"><div class="card-icon">🏫</div><h3>TSC Services</h3><p>New teacher registration, wealth declaration, old appraisal, sick leave, TSC promotions &amp; recruitment.</p></div>
+    <div class="govt-card reveal"><div class="card-icon">🚗</div><h3>NTSA Detailed Services</h3><p>Logbook transfer, new number plates, DL renewal, PDL/Interim application, test booking &amp; vehicle search.</p></div>
+    <div class="govt-card reveal"><div class="card-icon">🏢</div><h3>Business &amp; Company Registration</h3><p>Business &amp; company registration, vehicle logbook transfer, and related corporate digital services.</p></div>
   </div>
 </section>
 
 <!-- ICT CLASSES -->
-<section id="classes">
-  <div class="section-label reveal">ICT Training</div>
-  <h2 class="reveal">Learn Skills Employers <em>Actually Use</em></h2>
-  <div class="classes-layout">
-    <div class="reveal">
-      <div class="price-badge"><span class="amount">KSh 4,500</span><span class="period">/ Per Course · Certificate Included</span></div>
-      <p style="color:var(--gray);margin-bottom:8px;line-height:1.75">Hands-on, practical computer training based on the <strong>National KASNEB/KNEC curriculum</strong>. We don't just teach theory — you leave with real, job-ready skills and a portfolio of work you actually built.</p>
-      <div style="font-size:.78rem;background:var(--blue-pale);border-radius:8px;padding:8px 14px;color:var(--blue);margin-bottom:14px;border-left:3px solid var(--yellow)">📜 <strong>Certificate includes:</strong> course title, your name, completion date &amp; official stamp — accepted for job applications, CVs &amp; further study.</div>
-      <div class="modules-list">
-        <div class="mod-item">Introduction to Computers</div>
-        <div class="mod-item">Typing Master (40+ WPM)</div>
-        <div class="mod-item">Microsoft Word</div>
-        <div class="mod-item">Microsoft Excel &amp; Formulas</div>
-        <div class="mod-item">Microsoft Publisher</div>
-        <div class="mod-item">Microsoft Access</div>
-        <div class="mod-item">Microsoft PowerPoint</div>
-        <div class="mod-item">Internet &amp; Email</div>
-        <div class="mod-item">Graphic Design Basics</div>
-        <div class="mod-item">Data Entry &amp; Management</div>
-        <div class="mod-item">QuickBooks Basics</div>
-        <div class="mod-item">Social Media Management</div>
-        <div class="mod-item">Digital Marketing Basics</div>
-        <div class="mod-item">Video Editing Basics</div>
-        <div class="mod-item">Cybersecurity Awareness</div>
-        <div class="mod-item">Cloud Tools (Google Workspace)</div>
-        <div class="mod-item">Mobile &amp; Smartphone Skills</div>
-        <div class="mod-item">AI Tools for Beginners</div>
-        <div class="mod-item">Web Design Basics</div>
-        <div class="mod-item">Python / Coding Intro</div>
-      </div>
-      <!-- Advanced Classes Pricing -->
-      <div class="bonus-box" style="margin-bottom:14px;border-color:var(--blue);background:var(--blue-pale)">
-        <h4 style="color:var(--blue)">🚀 Advanced Classes — 1-on-1 Personalised Training</h4>
-        <p style="font-size:.83rem;color:var(--gray);margin-bottom:10px;line-height:1.6">Already have basic skills? Go deeper with specialist tracks, custom curriculum and flexible scheduling.</p>
-        <ul>
-          <li><span>🎨</span><span><strong>Graphic Design</strong> — Photoshop, Illustrator, CorelDRAW</span></li>
-          <li><span>🌐</span><span><strong>Web Design &amp; Digital Marketing</strong></span></li>
-          <li><span>💼</span><span><strong>Advanced Microsoft Office</strong> — Excel, Word, Access</span></li>
-          <li><span>📊</span><span><strong>QuickBooks &amp; Accounting Software</strong></span></li>
-          <li><span>🔐</span><span><strong>Network, CCTV &amp; Security Systems</strong></span></li>
-        </ul>
-        <div style="margin-top:12px;padding:9px 13px;background:var(--yellow-pale);border-radius:8px;border:1px solid var(--yellow-deep);font-size:.83rem;font-weight:700;color:var(--blue)">
-          💬 Pricing by arrangement — <a href="https://wa.me/254795312248?text=I'm%20interested%20in%20Advanced%20ICT%20Classes%20at%20DANCOM" target="_blank" rel="noopener" style="color:var(--blue-mid)">WhatsApp us for a quote →</a>
-        </div>
-      </div>
-      <div class="bonus-box" style="margin-bottom:12px">
-        <h4>🎁 3 FREE Bonus Packages</h4>
-        <ul><li><span>✓</span><span>PC Maintenance</span></li><li><span>✓</span><span>Scanning &amp; Printing</span></li><li><span>✓</span><span>Software Installation</span></li></ul>
-      </div>
-      <div class="bonus-box" style="border-color:var(--blue);background:var(--blue-pale)">
-        <h4>🌟 Upon Completion — Full Career Support</h4>
-        <ul>
-          <li><span>🎓</span><span><strong>DANCOM Skills Certificate</strong> — professional cardstock, unique seal, includes Skills Transcript listing every competency mastered</span></li>
-          <li><span>📂</span><span><strong>Digital Portfolio</strong> — folder of real documents, spreadsheets &amp; designs you built during training</span></li>
-          <li><span>💼</span><span><strong>3-Month Internship Placement</strong> — partnered with local Rumuruti offices &amp; businesses</span></li>
-          <li><span>📜</span><span><strong>Signed Recommendation Letter</strong> — from DANCOM ICT Centre to support your job search</span></li>
-          <li><span>🌐</span><span><strong>Free Guidance</strong> — toward Google Digital Toolkit &amp; Microsoft Fundamentals online certs</span></li>
-        </ul>
-      </div>
-      <div class="intake-badge" style="margin-top:16px">🎓 Intake In Progress — Enrol &amp; start immediately</div>
-    </div>
-    <div class="reveal">
-      <a href="https://wa.me/254795312248?text=I'm%20interested%20in%20ICT%20Classes%20at%20DANCOM" class="btn-yellow" target="_blank" rel="noopener" style="margin-bottom:20px;display:inline-flex">Enrol Now — WhatsApp Us →</a>
-      <div class="card" style="margin-bottom:14px"><div class="card-icon">🤖</div><h3>AI-Powered Learning</h3><p>Free AI Guide for beginners — available to all students on enrolment. Stay ahead of the curve with tools employers are already using.</p></div>
-      <div class="card" style="margin-bottom:14px"><div class="card-icon">🌉</div><h3>DANCOM as Your Bridge Centre</h3><p>We train you using the national KASNEB/KNEC syllabus, then assist you to register as a private candidate at an official exam centre nearby — giving you both our certificate and the national qualification path.</p></div>
-      <div class="card"><div class="card-icon">🌐</div><h3>Global Certification Pathway</h3><p>We guide top students toward free international certs — <strong>Google Digital Toolkit</strong> and <strong>Microsoft Fundamentals</strong> — which carry global weight alongside your DANCOM certificate.</p></div>
+<section id="classes" style="background:linear-gradient(160deg,var(--blue-deep) 0%,#0D1B5C 60%,#111d6b 100%)">
+  <div class="section-center reveal">
+    <div class="section-label" style="color:rgba(201,162,39,.85)">Professional ICT Training · 2026</div>
+    <h2 style="color:var(--white)">Learn Skills That Build <em style="color:var(--yellow)">Real Careers</em></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,.7)">Practical, hands-on training with certificates, career support, and new intakes every month. From KSh 4,500 — quality training for every budget.</p>
+  </div>
 
-      <!-- PAYMENT METHODS CARD -->
-      <div class="card" style="border-color:var(--yellow);padding:0;overflow:hidden;margin-top:4px">
-        <div style="background:linear-gradient(135deg,var(--blue),var(--blue-mid));padding:14px 20px;display:flex;align-items:center;gap:10px">
+  <!-- COURSE PRICE TABLE -->
+  <div class="reveal" style="margin-bottom:48px">
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(201,162,39,.25);border-radius:16px;overflow:hidden;max-width:900px;margin:0 auto">
+      <!-- Table header -->
+      <div style="background:linear-gradient(135deg,var(--yellow),var(--yellow-deep));padding:14px 20px;display:grid;grid-template-columns:2.5rem 1fr 7rem 7rem;gap:12px;align-items:center">
+        <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em">#</div>
+        <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em">Course</div>
+        <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;text-align:center">Duration</div>
+        <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;text-align:right">Fee (KSh)</div>
+      </div>
+      <!-- Rows -->
+      <div class="course-table">
+        <div class="ct-row ct-pop"><div class="ct-num">01</div><div class="ct-name">Basic Computer Package <span class="ct-badge pop">⭐ Most Popular</span><div class="ct-sub">Certificate Included</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">4,500</div></div>
+        <div class="ct-row"><div class="ct-num">02</div><div class="ct-name">Advanced MS Office <div class="ct-sub">Word, Excel, PowerPoint, Access</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">10,000</div></div>
+        <div class="ct-row"><div class="ct-num">03</div><div class="ct-name">QuickBooks Accounting <span class="ct-badge val">Best Value</span></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">12,000</div></div>
+        <div class="ct-row"><div class="ct-num">04</div><div class="ct-name">Computer Repair &amp; Maintenance</div><div class="ct-dur">8 Weeks</div><div class="ct-fee">25,000</div></div>
+        <div class="ct-row"><div class="ct-num">05</div><div class="ct-name">Graphic Design <div class="ct-sub">Photoshop, CorelDRAW, Illustrator</div></div><div class="ct-dur">6 Weeks</div><div class="ct-fee">18,000</div></div>
+        <div class="ct-row"><div class="ct-num">06</div><div class="ct-name">Web Design &amp; Development</div><div class="ct-dur">8 Weeks</div><div class="ct-fee">22,000</div></div>
+        <div class="ct-row"><div class="ct-num">07</div><div class="ct-name">Digital Marketing <div class="ct-sub">Social Media &amp; Online Marketing</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">15,000</div></div>
+        <div class="ct-row"><div class="ct-num">08</div><div class="ct-name">Networking (LAN &amp; WAN)</div><div class="ct-dur">6 Weeks</div><div class="ct-fee">20,000</div></div>
+        <div class="ct-row"><div class="ct-num">09</div><div class="ct-name">CCTV Installation &amp; Configuration</div><div class="ct-dur">5 Weeks</div><div class="ct-fee">18,000</div></div>
+        <div class="ct-row"><div class="ct-num">10</div><div class="ct-name">Software Installation &amp; Troubleshooting</div><div class="ct-dur">4 Weeks</div><div class="ct-fee">12,000</div></div>
+        <div class="ct-row"><div class="ct-num">11</div><div class="ct-name">Programming <div class="ct-sub">Python, HTML, CSS, JavaScript Basics</div></div><div class="ct-dur">8 Weeks</div><div class="ct-fee">25,000</div></div>
+        <div class="ct-row"><div class="ct-num">12</div><div class="ct-name">Data Analysis with Excel</div><div class="ct-dur">4 Weeks</div><div class="ct-fee">15,000</div></div>
+      </div>
+      <!-- Footer note -->
+      <div style="padding:12px 20px;background:rgba(201,162,39,.08);border-top:1px solid rgba(201,162,39,.2);font-size:.78rem;color:rgba(255,255,255,.65);text-align:center">
+        📅 New Intakes Every Month &nbsp;·&nbsp; 🎓 Certificate of Completion Awarded &nbsp;·&nbsp; 💻 Hands-On Practical Training
+      </div>
+    </div>
+  </div>
+
+  <!-- INCLUDED + PAYMENT POLICY + ENROL -->
+  <div style="max-width:900px;margin:0 auto 40px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px" class="reveal">
+    <!-- Included -->
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
+      <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">✅ Included in All Courses</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Practical Hands-On Training</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Course Notes &amp; Learning Materials</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Certificate of Completion</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Career Guidance &amp; Project Support</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Free AI Guide for Beginners</li>
+      </ul>
+    </div>
+    <!-- Payment Policy -->
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
+      <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">💳 Payment Policy</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>100% fee payable before classes begin</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Official receipt issued for every payment</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>No training commences without full payment</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Fees once paid are non-transferable</li>
+      </ul>
+    </div>
+    <!-- Career Outcomes -->
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
+      <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">🚀 Career Opportunities</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Office Admin · Secretary</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>ICT Technician · Web Developer</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Graphic Designer · Data Analyst</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Network Technician · CCTV Installer</li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Digital Marketer · Freelancer</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Enrol CTA + Payment Methods -->
+  <div class="classes-layout reveal">
+    <div>
+      <a href="https://wa.me/254795312248?text=I'm%20interested%20in%20ICT%20Classes%20at%20DANCOM" class="btn-yellow" target="_blank" rel="noopener" style="margin-bottom:20px;display:inline-flex;font-size:1rem;padding:15px 28px">🎓 Enrol Now — WhatsApp Us →</a>
+      <div class="intake-badge" style="margin-bottom:20px">📅 New Intake Every Month — Start Anytime</div>
+      <div class="bonus-box" style="margin-bottom:14px;border-color:rgba(201,162,39,.5);background:rgba(255,255,255,.05)">
+        <h4 style="color:var(--yellow)">🌟 Upon Completion — Full Career Support</h4>
+        <ul>
+          <li><span style="color:var(--yellow)">🎓</span><span style="color:rgba(255,255,255,.85)"><strong style="color:var(--white)">DANCOM Certificate</strong> — professional cardstock, unique seal &amp; Skills Transcript</span></li>
+          <li><span style="color:var(--yellow)">📂</span><span style="color:rgba(255,255,255,.85)"><strong style="color:var(--white)">Digital Portfolio</strong> — real work built during training</span></li>
+          <li><span style="color:var(--yellow)">💼</span><span style="color:rgba(255,255,255,.85)"><strong style="color:var(--white)">3-Month Internship Placement</strong> — local Rumuruti businesses</span></li>
+          <li><span style="color:var(--yellow)">📜</span><span style="color:rgba(255,255,255,.85)"><strong style="color:var(--white)">Signed Recommendation Letter</strong></span></li>
+          <li><span style="color:var(--yellow)">🌐</span><span style="color:rgba(255,255,255,.85)"><strong style="color:var(--white)">Free guidance</strong> — Google &amp; Microsoft online certifications</span></li>
+        </ul>
+      </div>
+      <div class="bonus-box" style="border-color:rgba(201,162,39,.5);background:rgba(255,255,255,.05)">
+        <h4 style="color:var(--yellow)">🎁 3 FREE Bonus Packages (Basic Course)</h4>
+        <ul>
+          <li><span style="color:var(--yellow)">✓</span><span style="color:rgba(255,255,255,.85)">PC Maintenance</span></li>
+          <li><span style="color:var(--yellow)">✓</span><span style="color:rgba(255,255,255,.85)">Scanning &amp; Printing</span></li>
+          <li><span style="color:var(--yellow)">✓</span><span style="color:rgba(255,255,255,.85)">Software Installation</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <!-- Payment Methods -->
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.25);border-radius:14px;overflow:hidden;margin-bottom:14px">
+        <div style="background:linear-gradient(135deg,var(--yellow),var(--yellow-deep));padding:14px 20px;display:flex;align-items:center;gap:10px">
           <span style="font-size:1.3rem">💳</span>
           <div>
-            <div style="color:var(--yellow);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em">How to Pay</div>
-            <div style="color:var(--white);font-size:.95rem;font-weight:700">Accepted Payment Methods</div>
+            <div style="color:var(--blue);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em">How to Pay</div>
+            <div style="color:var(--blue);font-size:.95rem;font-weight:700">Accepted Payment Methods</div>
           </div>
         </div>
         <div style="padding:16px 20px;display:flex;flex-direction:column;gap:10px">
-
-          <!-- M-Pesa -->
-          <div style="background:#e8f5e9;border:1.5px solid #4caf50;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
+          <div style="background:rgba(76,175,80,.12);border:1.5px solid #4caf50;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
             <span style="font-size:1.5rem;flex-shrink:0">📱</span>
             <div>
-              <div style="font-size:.72rem;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:.06em">M-Pesa / Airtel Money</div>
-              <div style="font-size:.82rem;color:#1b5e20;margin-top:2px">Paybill: <strong>247247</strong></div>
-              <div style="font-size:.82rem;color:#1b5e20">Account No: <strong>0795 312 248</strong></div>
+              <div style="font-size:.72rem;font-weight:700;color:#81c784;text-transform:uppercase;letter-spacing:.06em">M-Pesa / Airtel Money</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85);margin-top:2px">Paybill: <strong>247247</strong></div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85)">Account No: <strong>0795 312 248</strong></div>
             </div>
           </div>
-
-          <!-- Pochi La Biashara -->
-          <div style="background:#fff8e1;border:1.5px solid #ffb300;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
+          <div style="background:rgba(255,179,0,.1);border:1.5px solid #ffb300;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
             <span style="font-size:1.5rem;flex-shrink:0">🟡</span>
             <div>
-              <div style="font-size:.72rem;font-weight:700;color:#e65100;text-transform:uppercase;letter-spacing:.06em">Pochi La Biashara</div>
-              <div style="font-size:.82rem;color:#bf360c;margin-top:2px">Send to: <strong>0795 312 248</strong></div>
+              <div style="font-size:.72rem;font-weight:700;color:#ffcc02;text-transform:uppercase;letter-spacing:.06em">Pochi La Biashara</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85);margin-top:2px">Send to: <strong>0795 312 248</strong></div>
             </div>
           </div>
-
-          <!-- Equity -->
-          <div style="background:#fce4ec;border:1.5px solid #e91e63;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
+          <div style="background:rgba(233,30,99,.1);border:1.5px solid #e91e63;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
             <span style="font-size:1.5rem;flex-shrink:0">🏦</span>
             <div>
-              <div style="font-size:.72rem;font-weight:700;color:#880e4f;text-transform:uppercase;letter-spacing:.06em">Equity Bank</div>
-              <div style="font-size:.82rem;color:#560027;margin-top:2px">Equitel / Mobile App <strong>*247#</strong></div>
-              <div style="font-size:.82rem;color:#560027">Till / A/C: <strong>0795 312 248</strong></div>
+              <div style="font-size:.72rem;font-weight:700;color:#f48fb1;text-transform:uppercase;letter-spacing:.06em">Equity Bank / Equitel</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85);margin-top:2px">Mobile App <strong>*247#</strong></div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85)">A/C: <strong>0795 312 248</strong></div>
             </div>
           </div>
-
-          <!-- Cash -->
-          <div style="background:var(--blue-pale);border:1.5px solid var(--blue-light);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
+          <div style="background:rgba(201,162,39,.1);border:1.5px solid rgba(201,162,39,.4);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px">
             <span style="font-size:1.5rem;flex-shrink:0">💵</span>
             <div>
-              <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.06em">Cash</div>
-              <div style="font-size:.82rem;color:var(--blue-mid);margin-top:2px">Pay directly at our counter</div>
+              <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em">Cash</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.85);margin-top:2px">Pay directly at our counter</div>
             </div>
           </div>
-
-          <div style="background:var(--yellow-pale);border:1px solid var(--yellow-deep);border-radius:8px;padding:9px 13px;font-size:.78rem;font-weight:700;color:var(--blue);text-align:center">
-            ⚠️ Full payment required · No instalments
+          <div style="background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.3);border-radius:8px;padding:9px 13px;font-size:.78rem;font-weight:700;color:var(--yellow);text-align:center">
+            ⚠️ 100% fee payable before classes begin · Official receipt issued
           </div>
         </div>
       </div>
-
+      <!-- Bridge + Global cert cards -->
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:18px;margin-bottom:12px">
+        <div style="font-size:1.3rem;margin-bottom:8px">🌉</div>
+        <h3 style="font-size:.97rem;font-weight:700;color:var(--white);margin-bottom:6px">DANCOM as Your Bridge Centre</h3>
+        <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6">We train you using the national KASNEB/KNEC syllabus, then assist you to register as a private candidate at an official exam centre nearby.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:18px">
+        <div style="font-size:1.3rem;margin-bottom:8px">🌐</div>
+        <h3 style="font-size:.97rem;font-weight:700;color:var(--white);margin-bottom:6px">Global Certification Pathway</h3>
+        <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6">We guide top students toward free international certs — <strong style="color:var(--yellow)">Google Digital Toolkit</strong> and <strong style="color:var(--yellow)">Microsoft Fundamentals</strong>.</p>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- TEAM -->
 <section id="team">
@@ -1017,14 +1172,14 @@ footer ul a:hover{color:var(--yellow)}
     <p class="section-sub">Quick answers to what we get asked every day.</p>
   </div>
   <div class="faq-grid reveal">
-    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">How much do ICT classes cost?<span class="faq-icon">+</span></button><div class="faq-body"><p>Our full computer course is <strong>KSh 4,500</strong> — inclusive of all modules, hands-on sessions, your Skills Certificate, a digital portfolio of work you built, and 3 FREE bonus packages. No hidden charges.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">How much do ICT classes cost?<span class="faq-icon">+</span></button><div class="faq-body"><p>Our courses range from <strong>KSh 4,500</strong> (Basic Computer Package) up to <strong>KSh 25,000</strong> (Computer Repair &amp; Maintenance / Programming). Every course includes practical training, course notes, a Certificate of Completion, and career support. The Basic Computer Package also includes 3 FREE bonus packages.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">How long does printing take?<span class="faq-icon">+</span></button><div class="faq-body"><p>Most standard jobs are done within minutes. Bulk or complex orders may take a few hours — we'll give you a clear time estimate upfront.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can I send documents via WhatsApp?<span class="faq-icon">+</span></button><div class="faq-body"><p>Yes! Send your files to <a href="https://wa.me/254795312248" target="_blank" rel="noopener">0795 312 248</a> on WhatsApp and we'll print them ready for collection. Great for urgent jobs.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can you help with eCitizen from scratch?<span class="faq-icon">+</span></button><div class="faq-body"><p>Absolutely. We help you create your eCitizen account and process any service — NTSA, Good Conduct, KRA, NSSF and more.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Do you accept beginners for ICT classes?<span class="faq-icon">+</span></button><div class="faq-body"><p>Yes — we welcome total beginners. Our training starts from absolute basics and progresses at your pace. No prior experience needed.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What certificate do I get upon completion?<span class="faq-icon">+</span></button><div class="faq-body"><p>You receive a <strong>DANCOM ICT Centre Skills Certificate</strong> — printed on professional cardstock with a unique seal and a Skills Transcript listing every competency you mastered. Our training follows the national KASNEB/KNEC curriculum. We also assist graduates to register as private candidates at official exam centres for the national qualification, giving you both our certificate and the national path.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon">+</span></button><div class="faq-body"><p>We accept M-Pesa and cash. For larger orders or course fees, M-Pesa is preferred. Ask for our Till or Paybill number at the counter.</p></div></div>
-    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Where exactly are you located?<span class="faq-icon">+</span></button><div class="faq-body"><p>We are located <strong>opposite Rumuruti Day Secondary School</strong>, Rumuruti Township, Laikipia West Sub-county. Open Mon–Sat 7:30AM–7PM and Sunday 2PM–7PM.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Where exactly are you located?<span class="faq-icon">+</span></button><div class="faq-body"><p>We are located <strong>opposite Rumuruti Day Senior School</strong>, Rumuruti Township, Laikipia West Sub-county. Open Mon–Sat 7:30AM–7PM and Sunday 2PM–7PM.</p></div></div>
   </div>
 </section>
 
@@ -1040,10 +1195,10 @@ footer ul a:hover{color:var(--yellow)}
     <div class="why-card reveal"><div class="why-num">02</div><div class="icon">💰</div><h3>Affordable &amp; Transparent Pricing</h3><p>Clear, fair prices for everyone — students, businesses, and government clients alike. No hidden charges.</p></div>
     <div class="why-card reveal"><div class="why-num">03</div><div class="icon">⚡</div><h3>Fast, Same-Day Turnaround</h3><p>Most printing and document jobs completed within the hour. Training intake always open.</p></div>
     <div class="why-card reveal"><div class="why-num">04</div><div class="icon">🏆</div><h3>Skills-First ICT Training</h3><p>Curriculum based on national KASNEB/KNEC standards. You leave job-ready — with a Skills Certificate, a digital portfolio, and internship placement at a local Rumuruti business.</p></div>
-    <div class="why-card reveal"><div class="why-num">05</div><div class="icon">🌐</div><h3>eCitizen &amp; Gov't Partner</h3><p>Authorised for eCitizen, NTSA, KRA, NSSF, Good Conduct, and CRB services.</p></div>
+    <div class="why-card reveal"><div class="why-num">05</div><div class="icon">🌐</div><h3>eCitizen &amp; Gov't Partner</h3><p>Authorised for eCitizen, NTSA, KRA, SHA, NSSF, KUCCPS, NTSA, KRA, HELB, TSC, Good Conduct &amp; CRB services.</p></div>
     <div class="why-card reveal"><div class="why-num">06</div><div class="icon">🤖</div><h3>AI-Powered + Global Pathways</h3><p>Free AI Guide on enrolment. We also guide students toward Google Digital Toolkit &amp; Microsoft Fundamentals — free global certifications that complement your DANCOM training.</p></div>
     <div class="why-card reveal"><div class="why-num">07</div><div class="icon">🔐</div><h3>Secure Document Handling</h3><p>Confidential documents handled with strict privacy standards — no copies retained without consent.</p></div>
-    <div class="why-card reveal"><div class="why-num">08</div><div class="icon">📍</div><h3>Central Rumuruti Location</h3><p>Opposite Rumuruti Day Secondary School — easily accessible from across Laikipia West Sub-county.</p></div>
+    <div class="why-card reveal"><div class="why-num">08</div><div class="icon">📍</div><h3>Central Rumuruti Location</h3><p>Opposite Rumuruti Day Senior School — easily accessible from across Laikipia West Sub-county.</p></div>
   </div>
 </section>
 
@@ -1137,10 +1292,13 @@ footer ul a:hover{color:var(--yellow)}
   </div>
   <div class="contact-layout">
     <div class="contact-cards reveal">
-      <div class="c-card"><div class="icon">📍</div><div><h4>Physical Location</h4><p>Opposite Rumuruti Day Secondary School<br>Rumuruti Township, Laikipia West Sub-county<br>Laikipia County, Kenya</p></div></div>
+      <div class="c-card"><div class="icon">📍</div><div><h4>Physical Location</h4><p>Opposite Rumuruti Day Senior School<br>Rumuruti Township, Laikipia West Sub-county<br>Laikipia County, Kenya</p></div></div>
       <div class="c-card"><div class="icon">📞</div><div><h4>Phone / WhatsApp</h4><a href="tel:+254795312248">0795 312 248</a><br><a href="tel:+254783709080">0783 709 080</a></div></div>
       <div class="c-card"><div class="icon">✉️</div><div><h4>Email</h4><a href="mailto:info@dancomict.co.ke">info@dancomict.co.ke</a></div></div>
       <div class="c-card"><div class="icon">🕐</div><div><h4>Working Hours</h4><p>Mon – Sat: 7:30 AM – 7:00 PM<br>Sunday: 2:00 PM – 7:00 PM</p></div></div>
+      <a href="https://maps.app.goo.gl/htcNJ5jbpNttNKJ69" target="_blank" rel="noopener" class="c-card" style="text-decoration:none">
+        <div class="icon">🗺️</div><div><h4>Get Directions</h4><p>Open in Google Maps →</p></div>
+      </a>
       <a href="https://g.co/kgs/3c8EFh2" target="_blank" rel="noopener" class="gbiz2">
         <div style="font-size:1.7rem">📍</div>
         <div><div style="font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:2px">DANCOM ICT Centre on Google</div><div class="stars">★★★★★</div><div style="font-size:.76rem;color:var(--gray)">Get directions &amp; leave a review</div><div style="font-size:.76rem;font-weight:700;color:#EA4335;margin-top:3px">View on Google Maps →</div></div>
@@ -1163,8 +1321,43 @@ footer ul a:hover{color:var(--yellow)}
         <select id="service" name="service">
           <option value="">Select a service...</option>
           <optgroup label="General ICT"><option>Printing &amp; Photocopying</option><option>Typesetting &amp; Typing</option><option>Scanning &amp; Lamination</option><option>Stationery</option></optgroup>
-          <optgroup label="Training"><option>Computer Classes — Basic / Standard (KSh 4,500)</option><option>Advanced ICT Classes (Custom Quote)</option></optgroup>
-          <optgroup label="Government Services"><option>eCitizen Services</option><option>NTSA / Driving Licence</option><option>Good Conduct Certificate</option><option>KRA / iTax</option><option>NSSF / CRB</option><option>HELB / HEF Application</option></optgroup>
+          <optgroup label="ICT Training — From KSh 4,500">
+            <option>Basic Computer Package (KSh 4,500)</option>
+            <option>Advanced MS Office (KSh 10,000)</option>
+            <option>QuickBooks Accounting (KSh 12,000)</option>
+            <option>Computer Repair &amp; Maintenance (KSh 25,000)</option>
+            <option>Graphic Design (KSh 18,000)</option>
+            <option>Web Design &amp; Development (KSh 22,000)</option>
+            <option>Digital Marketing (KSh 15,000)</option>
+            <option>Networking LAN &amp; WAN (KSh 20,000)</option>
+            <option>CCTV Installation (KSh 18,000)</option>
+            <option>Software Installation &amp; Troubleshooting (KSh 12,000)</option>
+            <option>Programming — Python/HTML/CSS/JS (KSh 25,000)</option>
+            <option>Data Analysis with Excel (KSh 15,000)</option>
+          </optgroup>
+          <optgroup label="Government Services">
+            <option>eCitizen Services</option>
+            <option>NTSA / Driving Licence</option>
+            <option>Good Conduct Certificate</option>
+            <option>KRA / iTax Services</option>
+            <option>NSSF / SHA Services</option>
+            <option>HELB / HEF / KUCCPS</option>
+            <option>TSC Services</option>
+            <option>Business Registration</option>
+          </optgroup>
+          <optgroup label="Repairs &amp; Technical">
+            <option>Computer / Laptop Repair</option>
+            <option>Printer Repair &amp; Servicing</option>
+            <option>Phone / Tablet Repair</option>
+            <option>Electrical / Electronic Repair</option>
+            <option>Micro-Soldering / PCB Repair</option>
+          </optgroup>
+          <optgroup label="WiFi Hotspot">
+            <option>WiFi — 30 Minutes (KSh 30)</option>
+            <option>WiFi — 1 Hour (KSh 50)</option>
+            <option>WiFi — 3 Hours (KSh 100)</option>
+            <option>WiFi — Full Day (KSh 300)</option>
+          </optgroup>
           <optgroup label="Branding &amp; Digital"><option>Graphic Design</option><option>Digital Printing / Branding</option><option>Digital Marketing</option><option>Web &amp; Digital Setup</option></optgroup>
           <optgroup label="Travel &amp; Education"><option>Passport / Visa Application</option><option>Scholarships &amp; Bursaries</option></optgroup>
           <option>Other</option>
@@ -1218,8 +1411,10 @@ footer ul a:hover{color:var(--yellow)}
         <li><a href="#govt">NTSA / Driving Licence</a></li>
         <li><a href="#govt">Good Conduct</a></li>
         <li><a href="#govt">KRA / iTax</a></li>
-        <li><a href="#govt">NSSF / CRB</a></li>
+        <li><a href="#govt">NSSF / SHA</a></li>
         <li><a href="#govt">HELB / HEF</a></li>
+        <li><a href="#govt">KUCCPS</a></li>
+        <li><a href="#govt">TSC Services</a></li>
       </ul>
     </div>
     <div>
@@ -1257,7 +1452,7 @@ footer ul a:hover{color:var(--yellow)}
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"DANCOM ICT Centre","image":"https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg","url":"https://dancomict.co.ke","telephone":["+254795312248","+254783709080"],"email":"info@dancomict.co.ke","foundingDate":"2021","address":{"@type":"PostalAddress","streetAddress":"Opposite Rumuruti Day Secondary School","addressLocality":"Rumuruti","addressRegion":"Laikipia County","addressCountry":"KE"},"geo":{"@type":"GeoCoordinates","latitude":"0.268","longitude":"36.535"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"14:00","closes":"19:00"}],"priceRange":"KSh 500 - KSh 4500","description":"DANCOM ICT Centre — Fast, Reliable, One-Stop Digital Services in Rumuruti, Laikipia County."}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"DANCOM ICT Centre","image":"https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg","url":"https://dancomict.co.ke","telephone":["+254795312248","+254783709080"],"email":"info@dancomict.co.ke","foundingDate":"2021","address":{"@type":"PostalAddress","streetAddress":"Opposite Rumuruti Day Senior School","addressLocality":"Rumuruti","addressRegion":"Laikipia County","addressCountry":"KE"},"geo":{"@type":"GeoCoordinates","latitude":"0.268","longitude":"36.535"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"14:00","closes":"19:00"}],"priceRange":"KSh 4,500 - KSh 25,000","description":"DANCOM ICT Centre — Fast, Reliable, One-Stop Digital Services in Rumuruti, Laikipia County."}
 </script>
 
 <!-- MAIN JS -->
