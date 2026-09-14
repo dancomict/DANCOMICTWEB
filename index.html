@@ -9,14 +9,17 @@
 <meta name="author" content="DANCOM ICT Centre"/>
 <meta property="og:title" content="DANCOM ICT Centre | Fast · Reliable · One-Stop Digital Services"/>
 <meta property="og:description" content="Fast, reliable, and affordable ICT training, printing, government services, branding and more — all under one roof in Rumuruti, Laikipia County."/>
-<meta property="og:image" content="https://dancomict.co.ke/logo2.png"/>
+<meta property="og:image" content="https://dancomict.co.ke/images/DANCOM-banner.jpg"/>
 <meta property="og:url" content="https://dancomict.co.ke"/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="DANCOM ICT Centre | Fast · Reliable · One-Stop Digital Services"/>
 <meta name="twitter:description" content="Fast, reliable, and affordable ICT training, printing, government services, branding and more — all under one roof in Rumuruti, Laikipia County."/>
-<meta name="twitter:image" content="https://dancomict.co.ke/logo2.png"/>
+<meta name="twitter:image" content="https://dancomict.co.ke/images/DANCOM-banner.jpg"/>
 <link rel="canonical" href="https://dancomict.co.ke"/>
+<link rel="icon" type="image/png" href="logo2.png"/>
+<link rel="apple-touch-icon" href="logo2.png"/>
+<link rel="preload" as="image" href="images/DANCOMICT-BANNER-2026-AI-POWERED.jpg"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -24,7 +27,7 @@
   "name": "DANCOM ICT Centre",
   "url": "https://dancomict.co.ke",
   "logo": "https://dancomict.co.ke/logo2.png",
-  "image": "https://dancomict.co.ke/logo2.png",
+  "image": "https://dancomict.co.ke/images/DANCOM-banner.jpg",
   "description": "Fast, reliable, and affordable ICT training, printing, government services, repairs, branding and more in Rumuruti, Laikipia County, Kenya.",
   "telephone": ["+254795312248", "+254783709080"],
   "email": "info@dancomict.co.ke",
@@ -35,24 +38,10 @@
     "addressRegion": "Laikipia County",
     "addressCountry": "KE"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 0.2705,
-    "longitude": 36.5382
-  },
+  "geo": {"@type": "GeoCoordinates","latitude": 0.2705,"longitude": 36.5382},
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "07:30",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "14:00",
-      "closes": "19:00"
-    }
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "07:30","closes": "19:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Sunday","opens": "14:00","closes": "19:00"}
   ],
   "priceRange": "KSh",
   "foundingDate": "2021-05",
@@ -64,23 +53,20 @@
   ]
 }
 </script>
-<link rel="icon" type="image/png" href="logo2.png"/>
-<link rel="apple-touch-icon" href="logo2.png"/>
 <style>
-/* ══════════════════════════════════════════
-   ROOT — Century Gothic · Deep Navy · Gold
-══════════════════════════════════════════ */
 :root{
-  /* Brand: Deep Navy #0A2472 · Bright Gold #FFD100 · Brilliant White #FFFFFF */
-  --blue:#0A2472; --blue-mid:#1B3FA0; --blue-light:#2E5BE8;
-  --blue-pale:#EBF0FF; --blue-deep:#050E30;
-  --yellow:#FFD100; --yellow-deep:#E6B800; --yellow-pale:#FFFBE6;
-  --white:#FFFFFF; --off:#F8F9FF; --dark:#050E30;
-  --gray:#6B7280; --gray-light:#E5E7EB; --border:rgba(10,36,114,.12);
+  --blue:#0A2472;--blue-mid:#1B3FA0;--blue-light:#2E5BE8;
+  --blue-pale:#EBF0FF;--blue-deep:#050E30;
+  --yellow:#FFD100;--yellow-deep:#E6B800;--yellow-pale:#FFFBE6;
+  --white:#FFFFFF;--off:#F8F9FF;--dark:#050E30;
+  --gray:#6B7280;--gray-light:#E5E7EB;--border:rgba(10,36,114,.12);
   --font:'Century Gothic','CenturyGothic','Gill Sans MT','Gill Sans',Calibri,'Trebuchet MS',sans-serif;
-  --nav-h:72px; --r:12px;
+  --nav-h:72px;--r:12px;
   --shadow:0 4px 24px rgba(10,36,114,.10);
   --shadow-lg:0 8px 40px rgba(10,36,114,.18);
+  --grad-gold:linear-gradient(135deg,#FFD100 0%,#E6B800 50%,#FFD100 100%);
+  --grad-navy:linear-gradient(135deg,#050E30 0%,#0A2472 60%,#1B3FA0 100%);
+  --grad-card:linear-gradient(145deg,#ffffff 0%,#EBF0FF 100%);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -93,7 +79,7 @@ img{max-width:100%;display:block}
 .skip-link:focus{top:0}
 
 /* ══ TOPBAR ══ */
-.topbar{background:var(--blue);padding:8px 5%;display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:rgba(255,255,255,.8);flex-wrap:wrap;gap:6px}
+.topbar{background:var(--grad-navy);padding:8px 5%;display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:rgba(255,255,255,.8);flex-wrap:wrap;gap:6px}
 .topbar-left,.topbar-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .topbar a{color:var(--yellow);font-weight:600}
 .topbar-item{display:flex;align-items:center;gap:5px}
@@ -104,31 +90,21 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 .nav-logo img{height:54px;width:auto;max-width:170px;object-fit:contain}
 .nav-links{display:flex;gap:2px;list-style:none;align-items:center}
 .nav-links a{font-size:.78rem;font-weight:600;color:var(--blue);padding:7px 11px;border-radius:7px;transition:all .2s;white-space:nowrap}
-.nav-links a:hover{background:var(--blue-pale)}
-.nav-cta{background:var(--yellow)!important;color:var(--blue)!important;padding:9px 18px!important;border-radius:8px!important;font-weight:700!important}
+.nav-links a:hover,.nav-links a.active{background:var(--blue-pale);color:var(--blue)}
+.nav-links a.active{border-bottom:2px solid var(--yellow)}
+.nav-cta{background:var(--grad-gold)!important;color:var(--blue)!important;padding:9px 18px!important;border-radius:8px!important;font-weight:700!important}
 .nav-cta:hover{background:var(--yellow-deep)!important;transform:translateY(-1px)}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;z-index:600}
 .burger span{display:block;width:24px;height:2px;background:var(--blue);border-radius:2px;transition:all .3s}
 .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
 .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-/* ── Mobile nav overlay ── */
 .nav-overlay{display:none;position:fixed;inset:0;z-index:490;background:rgba(5,14,48,.45)}
 .nav-overlay.open{display:block}
 
-/* ── Mobile nav panel ── */
 @media(max-width:960px){
   .topbar{display:none}
-  .nav-links{
-    position:fixed;top:var(--nav-h);right:0;
-    width:min(300px,86vw);height:calc(100vh - var(--nav-h));
-    background:var(--white);flex-direction:column;align-items:stretch;
-    padding:20px 20px 40px;gap:4px;overflow-y:auto;
-    transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);
-    border-left:3px solid var(--yellow);box-shadow:-8px 0 32px rgba(10,36,114,.15);
-    z-index:510;
-  }
+  .nav-links{position:fixed;top:var(--nav-h);right:0;width:min(300px,86vw);height:calc(100vh - var(--nav-h));background:var(--white);flex-direction:column;align-items:stretch;padding:20px 20px 40px;gap:4px;overflow-y:auto;transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);border-left:3px solid var(--yellow);box-shadow:-8px 0 32px rgba(10,36,114,.15);z-index:510}
   .nav-links.open{transform:translateX(0)}
   .nav-links li{width:100%}
   .nav-links a{display:block;padding:12px 14px;font-size:.95rem;border-bottom:1px solid var(--gray-light);border-radius:0}
@@ -139,21 +115,27 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
   .nav-cta-desk{display:none}
 }
 
+/* ══ OPEN NOW BADGE ══ */
+.open-now-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:50px;font-size:.72rem;font-weight:700;border:1.5px solid}
+.open-now-badge.open{background:rgba(34,197,94,.12);color:#16a34a;border-color:#16a34a}
+.open-now-badge.closed{background:rgba(239,68,68,.1);color:#dc2626;border-color:#dc2626}
+.open-dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.8s infinite}
+
 /* ══ HERO ══ */
 #hero{min-height:100vh;display:flex;align-items:center;padding:100px 5% 70px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue) 55%,#1a4fc4 100%)}
 .hero-bg-pattern{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,209,0,.08) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
 .hero-orb{position:absolute;border-radius:50%;pointer-events:none}
-.hero-orb-1{top:-100px;right:-100px;width:480px;height:480px;background:rgba(255,209,0,.06)}
-.hero-orb-2{bottom:-120px;left:-80px;width:340px;height:340px;background:rgba(255,209,0,.04)}
+.hero-orb-1{top:-100px;right:-100px;width:480px;height:480px;background:radial-gradient(circle,rgba(255,209,0,.10),transparent 70%)}
+.hero-orb-2{bottom:-120px;left:-80px;width:340px;height:340px;background:radial-gradient(circle,rgba(46,91,232,.15),transparent 70%)}
 .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%;position:relative;z-index:1}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,209,0,.15);color:var(--yellow);padding:7px 18px;border-radius:50px;font-size:.8rem;font-weight:600;margin-bottom:24px;border:1px solid rgba(255,209,0,.3);animation:fadeUp .7s ease .1s both}
 .badge-dot{width:6px;height:6px;background:var(--yellow);border-radius:50%;animation:pulse 2s infinite;flex-shrink:0}
 .hero-content h1{font-size:clamp(2rem,4vw,3.4rem);font-weight:700;color:var(--white);line-height:1.08;margin-bottom:18px;animation:fadeUp .7s ease .2s both;letter-spacing:-.02em}
-.hero-content h1 span{color:var(--yellow)}
+.hero-content h1 span{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-content p{color:rgba(255,255,255,.82);font-size:1rem;margin-bottom:30px;animation:fadeUp .7s ease .35s both;line-height:1.75}
 .hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;animation:fadeUp .7s ease .5s both}
-.btn-yellow{display:inline-flex;align-items:center;gap:7px;background:var(--yellow);color:var(--blue-deep);padding:13px 24px;border-radius:10px;font-weight:700;font-size:.92rem;font-family:var(--font);border:none;cursor:pointer;transition:all .22s}
-.btn-yellow:hover{background:var(--yellow-deep);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,209,0,.35)}
+.btn-yellow{display:inline-flex;align-items:center;gap:7px;background:var(--grad-gold);color:var(--blue-deep);padding:13px 24px;border-radius:10px;font-weight:700;font-size:.92rem;font-family:var(--font);border:none;cursor:pointer;transition:all .22s}
+.btn-yellow:hover{background:var(--yellow-deep);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,209,0,.4)}
 .btn-ghost{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);color:var(--white);padding:13px 24px;border-radius:10px;font-weight:600;font-size:.92rem;border:1.5px solid rgba(255,255,255,.28);transition:all .22s}
 .btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
 .hero-contacts{display:flex;gap:20px;flex-wrap:wrap;animation:fadeUp .7s ease .65s both}
@@ -177,14 +159,14 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 .slide-dot.active{background:var(--yellow)}
 
 /* ══ STATS BAR ══ */
-.stats-bar{background:var(--yellow);padding:20px 5%;display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+.stats-bar{background:linear-gradient(135deg,#FFD100 0%,#FFE44D 40%,#E6B800 100%);padding:20px 5%;display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;box-shadow:0 4px 20px rgba(255,209,0,.3)}
 .stat-item{text-align:center}
 .stat-num{font-size:1.85rem;font-weight:700;color:var(--blue);line-height:1}
 .stat-lbl{font-size:.7rem;font-weight:700;color:var(--blue-mid);letter-spacing:.07em;text-transform:uppercase;margin-top:3px}
 .stat-sep{width:1px;height:38px;background:rgba(10,36,114,.2)}
 
 /* ══ FIND US ══ */
-.find-us-bar{background:var(--blue-pale);border-bottom:1px solid rgba(10,36,114,.1);padding:12px 5%;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.find-us-bar{background:linear-gradient(135deg,var(--blue-pale) 0%,#dde6ff 100%);border-bottom:1px solid rgba(10,36,114,.1);padding:12px 5%;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
 .find-us-bar span{font-size:.7rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.07em}
 .fub{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:8px;font-size:.78rem;font-weight:700;border:1.5px solid var(--gray-light);background:var(--white);transition:all .18s}
 .fub:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
@@ -195,7 +177,7 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 .pulse{width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse 1.8s infinite;flex-shrink:0}
 
 /* ══ TICKER ══ */
-.ticker-wrap{background:var(--blue);overflow:hidden;padding:11px 0;white-space:nowrap;border-top:2px solid var(--yellow);border-bottom:2px solid var(--yellow)}
+.ticker-wrap{background:var(--grad-navy);overflow:hidden;padding:11px 0;white-space:nowrap;border-top:2px solid var(--yellow);border-bottom:2px solid var(--yellow)}
 .ticker{display:inline-block;animation:ticker 34s linear infinite;font-size:.82rem;font-weight:700;color:rgba(255,255,255,.9)}
 .ticker span{margin:0 24px;letter-spacing:.04em;text-transform:uppercase}
 .ticker span::before{content:'✦ ';color:var(--yellow)}
@@ -212,20 +194,22 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 
 /* ══ SHARED SECTION ══ */
 section{padding:84px 5%;position:relative}
-.section-label{font-size:.7rem;font-weight:700;color:var(--blue-mid);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.section-label::before{content:'';display:block;width:22px;height:3px;background:var(--yellow);border-radius:2px}
+.section-label{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;background:linear-gradient(90deg,var(--blue-mid),var(--blue-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.section-label::before{content:'';display:block;width:22px;height:3px;background:var(--grad-gold);border-radius:2px;flex-shrink:0;-webkit-text-fill-color:initial}
 h2{font-size:clamp(1.7rem,3vw,2.6rem);font-weight:700;color:var(--blue);line-height:1.12;margin-bottom:12px;letter-spacing:-.02em}
 h2 em{font-style:normal;color:var(--yellow-deep)}
 .section-sub{color:var(--gray);font-size:.97rem;max-width:560px;margin-bottom:46px;line-height:1.75}
 .section-center{text-align:center}
 .section-center .section-label{justify-content:center}
 .section-center .section-sub{margin:0 auto 46px}
-.group-label{font-size:.8rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px;padding:8px 16px;background:var(--blue-pale);border-radius:8px;border-left:3px solid var(--yellow);display:inline-block}
+.group-label{font-size:.8rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px;padding:8px 16px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border-radius:8px;border-left:3px solid var(--yellow);display:inline-block}
 
-/* ══ CARDS GRID ══ */
+/* ══ CARDS ══ */
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
-.card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:26px;transition:all .25s}
+.card{background:var(--grad-card);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:26px;transition:all .25s;position:relative;overflow:hidden}
+.card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-gold);transform:scaleX(0);transition:transform .3s;transform-origin:left}
 .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--yellow)}
+.card:hover::after{transform:scaleX(1)}
 .card-icon{font-size:1.9rem;margin-bottom:12px;line-height:1}
 .card h3{font-size:.97rem;font-weight:700;margin-bottom:6px;color:var(--blue)}
 .card p{font-size:.86rem;color:var(--gray);line-height:1.6}
@@ -235,57 +219,65 @@ h2 em{font-style:normal;color:var(--yellow-deep)}
 
 /* ══ GOVT ══ */
 #govt{background:linear-gradient(135deg,var(--blue-deep) 0%,#0d2e8a 100%);overflow:hidden}
+#govt .section-label{background:linear-gradient(90deg,rgba(255,209,0,.85),#FFD100);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 #govt .section-label::before{background:var(--yellow)}
-#govt .section-label{color:rgba(255,209,0,.85)}
 #govt h2{color:var(--white)}
 #govt h2 em{color:var(--yellow)}
 #govt .section-sub{color:rgba(255,255,255,.65)}
 .govt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
-.govt-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:22px;transition:all .25s}
-.govt-card:hover{background:rgba(255,255,255,.14);transform:translateY(-3px);border-color:rgba(255,209,0,.4)}
+.govt-card{background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:22px;transition:all .25s}
+.govt-card:hover{background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.08));transform:translateY(-3px);border-color:rgba(255,209,0,.4);box-shadow:0 8px 32px rgba(0,0,0,.3)}
 .govt-card .card-icon{font-size:1.55rem;margin-bottom:10px}
 .govt-card h3{font-size:.93rem;font-weight:700;color:var(--white);margin-bottom:6px}
 .govt-card p{font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.55}
 
 /* ══ ICT CLASSES ══ */
-#classes{background:linear-gradient(135deg,var(--blue-pale) 0%,#dde6ff 100%)}
 .classes-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.price-badge{display:inline-flex;align-items:baseline;gap:6px;background:var(--yellow);color:var(--blue);padding:14px 24px;border-radius:12px;margin-bottom:22px}
-.price-badge .amount{font-size:2rem;font-weight:700;line-height:1}
-.price-badge .period{font-size:.78rem;font-weight:600;opacity:.75}
-.modules-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
-.mod-item{display:flex;align-items:center;gap:8px;font-size:.86rem;font-weight:600;color:var(--blue);background:var(--white);border:1.5px solid var(--gray-light);border-radius:8px;padding:8px 12px;transition:border-color .2s}
-.mod-item:hover{border-color:var(--yellow)}
-.mod-item::before{content:'▶';color:var(--yellow);font-size:.6rem;flex-shrink:0}
 .bonus-box{background:var(--white);border:1.5px solid var(--yellow);border-radius:10px;padding:18px}
 .bonus-box h4{font-size:.85rem;font-weight:700;color:var(--blue);margin-bottom:10px}
 .bonus-box ul{list-style:none;display:flex;flex-direction:column;gap:6px}
 .bonus-box ul li{font-size:.84rem;color:var(--gray);display:flex;align-items:flex-start;gap:7px}
-.intake-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:var(--yellow);padding:9px 18px;border-radius:50px;font-size:.8rem;font-weight:700;margin-top:14px}
+.intake-badge{display:inline-flex;align-items:center;gap:6px;background:var(--grad-navy);color:var(--yellow);padding:9px 18px;border-radius:50px;font-size:.8rem;font-weight:700;margin-top:14px}
+
+/* ══ COURSE TABLE ══ */
+.course-table{display:flex;flex-direction:column}
+.ct-row{display:grid;grid-template-columns:2.5rem 1fr 7rem 7rem;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .2s}
+.ct-row:last-child{border-bottom:none}
+.ct-row:hover{background:rgba(201,162,39,.08)}
+.ct-pop{background:rgba(201,162,39,.08)}
+.ct-num{font-size:.8rem;font-weight:700;color:var(--yellow);opacity:.7}
+.ct-name{font-size:.88rem;font-weight:700;color:var(--white);line-height:1.3}
+.ct-sub{font-size:.74rem;font-weight:400;color:rgba(255,255,255,.55);margin-top:2px}
+.ct-badge{display:inline-block;font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:50px;margin-left:6px;vertical-align:middle}
+.ct-badge.pop{background:var(--yellow);color:var(--blue)}
+.ct-badge.val{background:rgba(34,197,94,.2);color:#4ade80;border:1px solid rgba(34,197,94,.3)}
+.ct-dur{font-size:.8rem;color:rgba(255,255,255,.65);text-align:center}
+.ct-fee{font-size:.95rem;font-weight:700;color:var(--yellow);text-align:right}
 
 /* ══ TEAM ══ */
-#team{background:var(--off)}
+#team{background:linear-gradient(180deg,var(--off) 0%,var(--blue-pale) 100%)}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px}
-.team-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:28px;text-align:center;transition:all .25s}
+.team-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:28px;text-align:center;transition:all .25s;position:relative;overflow:hidden}
+.team-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-gold)}
 .team-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--yellow)}
-.team-avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:3px solid var(--yellow)}
+.team-avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:3px solid var(--yellow);box-shadow:0 4px 16px rgba(255,209,0,.3)}
 .team-initials{width:88px;height:88px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:700;color:var(--white);margin:0 auto 14px}
 .team-card h3{font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:4px}
 .team-role{font-size:.72rem;color:var(--blue-mid);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
 .team-card p{font-size:.84rem;color:var(--gray);line-height:1.55}
 
 /* ══ PROCESS ══ */
-#process{background:var(--blue-pale)}
+#process{background:linear-gradient(135deg,var(--blue-pale) 0%,#dde6ff 100%)}
 .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
-.process-steps::after{content:'';position:absolute;top:28px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,var(--blue),var(--yellow));z-index:0}
+.process-steps::after{content:'';position:absolute;top:28px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,var(--blue),var(--yellow),var(--blue));z-index:0;animation:shimmer 3s linear infinite;background-size:200% 100%}
 .process-step{text-align:center;padding:0 16px;position:relative;z-index:1}
-.step-num{width:56px;height:56px;border-radius:50%;background:var(--blue);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:700;margin:0 auto 16px;border:4px solid var(--white);box-shadow:0 0 0 3px var(--blue)}
+.step-num{width:56px;height:56px;border-radius:50%;background:var(--grad-navy);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:700;margin:0 auto 16px;border:4px solid var(--white);box-shadow:0 0 0 3px var(--blue)}
 .process-step h3{font-size:.95rem;font-weight:700;margin-bottom:6px;color:var(--blue)}
 .process-step p{font-size:.83rem;color:var(--gray)}
 
 /* ══ GALLERY ══ */
-#gallery{background:var(--dark)}
-#gallery .section-label{color:rgba(255,209,0,.85)}
+#gallery{background:linear-gradient(180deg,var(--dark) 0%,#0a1628 100%)}
+#gallery .section-label{background:linear-gradient(90deg,rgba(255,209,0,.85),#FFE44D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 #gallery .section-label::before{background:var(--yellow)}
 #gallery h2{color:var(--white)}
 #gallery h2 em{color:var(--yellow)}
@@ -295,9 +287,19 @@ h2 em{font-style:normal;color:var(--yellow-deep)}
 .gal-item.wide{grid-column:span 2;aspect-ratio:2/1}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .4s;filter:brightness(.85)}
 .gal-item:hover img{transform:scale(1.07);filter:brightness(1)}
-.gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,14,48,.82),transparent);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:12px}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,14,48,.85),rgba(10,36,114,.2),transparent);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:12px}
 .gal-item:hover .gal-overlay{opacity:1}
 .gal-overlay span{color:var(--yellow);font-size:.8rem;font-weight:700}
+
+/* ══ PORTFOLIO STRIPS ══ */
+.portfolio-strip-wrap{overflow:hidden;position:relative;padding:16px 0;background:rgba(255,255,255,.03);border-top:1px solid rgba(255,209,0,.15);border-bottom:1px solid rgba(255,209,0,.15);margin-top:24px}
+.portfolio-strip-wrap::before,.portfolio-strip-wrap::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
+.portfolio-strip-wrap::before{left:0;background:linear-gradient(90deg,var(--dark),transparent)}
+.portfolio-strip-wrap::after{right:0;background:linear-gradient(-90deg,var(--dark),transparent)}
+.portfolio-strip{display:flex;gap:10px;animation:imgscroll 28s linear infinite;width:max-content}
+.portfolio-strip:hover{animation-play-state:paused}
+.portfolio-strip img{height:120px;width:160px;object-fit:cover;border-radius:8px;border:2px solid rgba(255,209,0,.2);cursor:pointer;transition:all .3s}
+.portfolio-strip img:hover{border-color:var(--yellow);transform:scale(1.05)}
 
 /* ══ LIGHTBOX ══ */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:9999;display:none;align-items:center;justify-content:center;padding:16px}
@@ -307,11 +309,11 @@ h2 em{font-style:normal;color:var(--yellow-deep)}
 .lb-close:hover{opacity:.7}
 
 /* ══ SOCIAL FEEDS ══ */
-#socials{background:var(--off)}
-.socials-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+#socials{background:linear-gradient(180deg,var(--off) 0%,var(--blue-pale) 100%)}
+.socials-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
 .social-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
 .social-card:hover{border-color:var(--yellow)}
-.social-card-hd{padding:13px 18px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--gray-light);background:var(--blue-pale)}
+.social-card-hd{padding:13px 18px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--gray-light);background:linear-gradient(135deg,var(--blue-pale),#dde6ff)}
 .social-card-hd .icon{font-size:1.25rem}
 .social-card-hd h3{font-size:.9rem;font-weight:700;color:var(--blue)}
 .social-card-hd a{font-size:.76rem;color:var(--blue-mid);margin-left:auto;font-weight:700}
@@ -328,35 +330,45 @@ h2 em{font-style:normal;color:var(--yellow-deep)}
 .gbiz:hover{box-shadow:0 4px 20px rgba(234,67,53,.14)}
 .stars{color:#FBBC04;font-size:.95rem;margin:3px 0;letter-spacing:2px}
 
+/* ══ GOOGLE BUSINESS PHOTOS ══ */
+.gbiz-photos{background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border-radius:var(--r);padding:24px;margin-top:24px;text-align:center}
+.gbiz-photos h3{font-size:.95rem;font-weight:700;color:var(--blue);margin-bottom:6px}
+.gbiz-photos p{font-size:.83rem;color:var(--gray);margin-bottom:16px}
+.gbiz-photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.gbiz-photo-grid img{border-radius:8px;aspect-ratio:1/1;object-fit:cover;border:2px solid rgba(10,36,114,.1);transition:all .25s;cursor:pointer}
+.gbiz-photo-grid img:hover{border-color:var(--yellow);transform:scale(1.03)}
+
 /* ══ FAQ ══ */
 #faq{background:var(--white)}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
 .faq-item{border:1.5px solid var(--gray-light);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
 .faq-item.open{border-color:var(--yellow)}
 .faq-btn{width:100%;display:flex;align-items:center;justify-content:space-between;padding:17px 20px;background:none;border:none;font-family:var(--font);font-size:.9rem;font-weight:700;color:var(--blue);cursor:pointer;text-align:left;gap:12px;transition:background .2s}
-.faq-btn:hover{background:var(--blue-pale)}
-.faq-item.open .faq-btn{background:var(--blue-pale)}
+.faq-btn:hover{background:linear-gradient(135deg,var(--blue-pale),#dde6ff)}
+.faq-item.open .faq-btn{background:linear-gradient(135deg,var(--blue-pale),#dde6ff)}
 .faq-icon{width:26px;height:26px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;flex-shrink:0;transition:all .3s;color:var(--blue)}
-.faq-item.open .faq-icon{background:var(--yellow);color:var(--blue);transform:rotate(45deg)}
+.faq-item.open .faq-icon{background:var(--grad-gold);color:var(--blue);transform:rotate(45deg)}
 .faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
 .faq-item.open .faq-body{max-height:300px}
 .faq-body p{padding:0 20px 16px;font-size:.86rem;color:var(--gray);line-height:1.72}
 .faq-body a{color:var(--blue-mid);font-weight:700}
 
 /* ══ WHY US ══ */
-#why{background:var(--blue-pale)}
+#why{background:linear-gradient(180deg,var(--blue-pale) 0%,#dde6ff 100%)}
 .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:18px}
 .why-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:26px;position:relative;overflow:hidden;transition:all .25s}
+.why-card::before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,var(--white) 60%,var(--blue-pale) 100%);opacity:0;transition:opacity .3s}
 .why-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--yellow)}
+.why-card:hover::before{opacity:1}
 .why-num{position:absolute;top:12px;right:16px;font-size:3.2rem;font-weight:700;color:rgba(10,36,114,.06);line-height:1;pointer-events:none}
-.why-card .icon{font-size:1.75rem;margin-bottom:10px}
-.why-card h3{font-size:.97rem;font-weight:700;margin-bottom:7px;color:var(--blue)}
-.why-card p{font-size:.85rem;color:var(--gray);line-height:1.6}
+.why-card .icon{font-size:1.75rem;margin-bottom:10px;position:relative;z-index:1}
+.why-card h3{font-size:.97rem;font-weight:700;margin-bottom:7px;color:var(--blue);position:relative;z-index:1}
+.why-card p{font-size:.85rem;color:var(--gray);line-height:1.6;position:relative;z-index:1}
 
 /* ══ TESTIMONIALS ══ */
-#testimonials{background:var(--off)}
+#testimonials{background:linear-gradient(180deg,var(--off) 0%,var(--white) 100%)}
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-.testi-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:var(--r);padding:26px;position:relative;transition:all .25s}
+.testi-card{background:linear-gradient(145deg,var(--white),var(--blue-pale));border:1.5px solid var(--gray-light);border-radius:var(--r);padding:26px;position:relative;transition:all .25s}
 .testi-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--yellow)}
 .testi-card::before{content:'\201C';position:absolute;top:14px;right:20px;font-size:52px;line-height:1;color:var(--yellow);opacity:.35;font-family:Georgia,serif}
 .testi-stars{color:var(--yellow-deep);font-size:.95rem;letter-spacing:2px;margin-bottom:12px}
@@ -367,41 +379,43 @@ h2 em{font-style:normal;color:var(--yellow-deep)}
 .testi-info span{font-size:.75rem;color:var(--gray)}
 
 /* ══ CATALOGUE CTA ══ */
-#catalogue{background:linear-gradient(135deg,var(--blue-deep),var(--blue-mid));padding:72px 5%;text-align:center;position:relative;overflow:hidden}
-#catalogue::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 60% 50%,rgba(255,209,0,.07),transparent 70%);pointer-events:none}
+#catalogue{background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue) 50%,var(--blue-mid) 100%);padding:72px 5%;text-align:center;position:relative;overflow:hidden}
+#catalogue::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 60% 50%,rgba(255,209,0,.10),transparent 70%);pointer-events:none}
 .cat-inner{position:relative;z-index:1;max-width:620px;margin:0 auto}
-#catalogue .section-label{justify-content:center;color:rgba(255,209,0,.85)}
+#catalogue .section-label{justify-content:center;background:linear-gradient(90deg,rgba(255,209,0,.85),#FFE44D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 #catalogue .section-label::before{background:var(--yellow)}
 #catalogue h2{color:var(--white)}
 #catalogue h2 em{color:var(--yellow)}
 #catalogue p{color:rgba(255,255,255,.78);margin-bottom:32px;line-height:1.72}
 .cat-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-wa{background:#25D366;color:var(--white);padding:14px 26px;border-radius:10px;font-weight:700;font-size:.93rem;font-family:var(--font);display:inline-flex;align-items:center;gap:8px;transition:all .22s}
-.btn-wa:hover{background:#1ebe59;transform:translateY(-2px)}
+.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:var(--white);padding:14px 26px;border-radius:10px;font-weight:700;font-size:.93rem;font-family:var(--font);display:inline-flex;align-items:center;gap:8px;transition:all .22s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.35)}
 .btn-white-ol{background:rgba(255,255,255,.1);color:var(--white);padding:14px 26px;border-radius:10px;font-weight:600;font-size:.93rem;border:1.5px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;gap:8px;transition:all .22s}
 .btn-white-ol:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
 
 /* ══ ABOUT ══ */
-#about{background:var(--blue-pale)}
+#about{background:linear-gradient(180deg,var(--blue-pale) 0%,#dde6ff 100%)}
 .about-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
-.about-stat{background:var(--white);border:1.5px solid var(--gray-light);border-radius:10px;padding:18px;transition:border-color .2s}
-.about-stat:hover{border-color:var(--yellow)}
+.about-stat{background:var(--white);border:1.5px solid var(--gray-light);border-radius:10px;padding:18px;transition:all .2s;position:relative;overflow:hidden}
+.about-stat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--grad-gold);transform:scaleX(0);transition:transform .3s}
+.about-stat:hover{border-color:var(--yellow);box-shadow:var(--shadow)}
+.about-stat:hover::after{transform:scaleX(1)}
 .about-stat .num{font-size:1.7rem;font-weight:700;color:var(--blue)}
 .about-stat .lbl{font-size:.74rem;color:var(--gray);margin-top:2px}
 .mission-box{background:linear-gradient(135deg,var(--blue),var(--blue-mid));color:var(--white);border-radius:14px;padding:32px;margin-bottom:22px;position:relative;overflow:hidden}
-.mission-box::after{content:'';position:absolute;bottom:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,209,0,.12)}
+.mission-box::after{content:'';position:absolute;bottom:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,209,0,.15)}
 .mission-box h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--yellow);margin-bottom:12px;position:relative;z-index:1}
 .mission-box p{font-size:.95rem;line-height:1.75;opacity:.9;position:relative;z-index:1}
 .yt-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow-lg);position:relative;padding-bottom:56.25%;height:0}
 .yt-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px}
 
 /* ══ CONTACT ══ */
-#contact{background:var(--off)}
+#contact{background:linear-gradient(180deg,var(--off) 0%,var(--blue-pale) 100%)}
 .contact-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:52px}
 .contact-cards{display:flex;flex-direction:column;gap:11px}
-.c-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:12px;transition:border-color .2s}
-.c-card:hover{border-color:var(--blue)}
+.c-card{background:var(--white);border:1.5px solid var(--gray-light);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:12px;transition:all .2s}
+.c-card:hover{border-color:var(--blue);box-shadow:var(--shadow)}
 .c-card .icon{font-size:1.2rem;flex-shrink:0}
 .c-card h4{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);margin-bottom:3px}
 .c-card p,.c-card a{font-size:.87rem;font-weight:600;color:var(--dark);line-height:1.5}
@@ -415,8 +429,8 @@ label{font-size:.78rem;font-weight:700;color:var(--blue);display:block;margin-bo
 input,textarea,select{width:100%;padding:11px 14px;border:1.5px solid var(--gray-light);border-radius:9px;font-family:var(--font);font-size:.88rem;background:var(--white);color:var(--dark);outline:none;transition:border-color .2s}
 input:focus,textarea:focus,select:focus{border-color:var(--blue)}
 textarea{resize:vertical;min-height:112px}
-.submit-btn{background:var(--blue);color:var(--yellow);padding:13px 26px;border:none;border-radius:10px;font-family:var(--font);font-size:.93rem;font-weight:700;cursor:pointer;transition:all .22s;align-self:flex-start}
-.submit-btn:hover{background:var(--blue-mid);transform:translateY(-2px)}
+.submit-btn{background:var(--grad-navy);color:var(--yellow);padding:13px 26px;border:none;border-radius:10px;font-family:var(--font);font-size:.93rem;font-weight:700;cursor:pointer;transition:all .22s;align-self:flex-start}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(10,36,114,.3)}
 .form-ok{display:none;background:#dcfce7;color:#15803d;padding:11px 14px;border-radius:8px;font-weight:600;font-size:.85rem}
 .cat-strip{background:linear-gradient(135deg,#25D366,#128C7E);border-radius:10px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:14px}
 .cat-strip h3{color:var(--white);font-size:.95rem;font-weight:700;margin-bottom:2px}
@@ -425,14 +439,14 @@ textarea{resize:vertical;min-height:112px}
 .cat-btn:hover{transform:translateY(-2px)}
 
 /* ══ FOOTER ══ */
-footer{background:var(--blue);color:rgba(255,255,255,.65);padding:56px 5% 26px;border-top:4px solid var(--yellow)}
+footer{background:linear-gradient(180deg,#050E30 0%,#020812 100%);color:rgba(255,255,255,.65);padding:56px 5% 26px;border-top:4px solid var(--yellow)}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
 .f-logo{margin-bottom:14px}
 .f-logo img{height:58px;width:auto;max-width:200px}
 .f-brand p{font-size:.83rem;line-height:1.68;max-width:265px;color:rgba(255,255,255,.6);margin-bottom:18px}
 .f-socials{display:flex;gap:8px;flex-wrap:wrap}
 .sbtn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700;color:rgba(255,255,255,.65);transition:all .2s}
-.sbtn:hover{background:var(--yellow);color:var(--blue-deep)}
+.sbtn:hover{background:var(--grad-gold);color:var(--blue-deep)}
 footer h4{color:var(--yellow);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:9px}
 footer ul a{font-size:.82rem;color:rgba(255,255,255,.5);transition:color .2s}
@@ -444,12 +458,23 @@ footer ul a:hover{color:var(--yellow)}
 /* ══ FLOATERS ══ */
 .floaters{position:fixed;bottom:22px;left:22px;display:flex;flex-direction:column;gap:11px;z-index:400}
 .fl-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--white);box-shadow:0 4px 16px rgba(0,0,0,.28);transition:all .2s}
-.fl-btn:hover{transform:scale(1.1)}
-.fl-wa{background:#25D366}
-.fl-call{background:var(--blue)}
+.fl-btn:hover{transform:scale(1.12)}
+.fl-wa{background:linear-gradient(135deg,#25D366,#128C7E);animation:wa-pulse 2.5s ease-in-out infinite}
+.fl-call{background:var(--grad-navy)}
+@keyframes wa-pulse{0%,100%{box-shadow:0 4px 16px rgba(37,211,102,.4)}50%{box-shadow:0 4px 28px rgba(37,211,102,.7),0 0 0 8px rgba(37,211,102,.15)}}
+
+/* ══ BACK TO TOP ══ */
+.back-top{position:fixed;bottom:22px;right:22px;width:44px;height:44px;border-radius:50%;background:var(--grad-gold);color:var(--blue);border:none;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:400;opacity:0;transform:translateY(10px);transition:all .3s;box-shadow:0 4px 16px rgba(255,209,0,.4)}
+.back-top.show{opacity:1;transform:translateY(0)}
+.back-top:hover{transform:translateY(-3px) scale(1.08)}
+
+/* ══ TRUST BADGE ══ */
+.trust-badge{position:fixed;top:calc(var(--nav-h) + 12px);right:16px;background:var(--white);border:1.5px solid var(--yellow);border-radius:50px;padding:6px 14px;display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;color:var(--blue);z-index:400;box-shadow:var(--shadow);opacity:0;transform:translateX(20px);transition:all .4s}
+.trust-badge.show{opacity:1;transform:translateX(0)}
+.trust-badge span{color:var(--yellow-deep)}
 
 /* ══ TOAST ══ */
-.toast{position:fixed;bottom:160px;right:22px;z-index:9999;background:var(--blue);color:var(--white);padding:14px 18px;border-radius:10px;font-size:.88rem;font-weight:600;opacity:0;transform:translateY(10px);transition:all .3s;pointer-events:none;border-left:4px solid var(--yellow)}
+.toast{position:fixed;bottom:90px;right:22px;z-index:9999;background:var(--grad-navy);color:var(--white);padding:14px 18px;border-radius:10px;font-size:.88rem;font-weight:600;opacity:0;transform:translateY(10px);transition:all .3s;pointer-events:none;border-left:4px solid var(--yellow)}
 .toast.show{opacity:1;transform:translateY(0)}
 
 /* ══ ANIMATIONS ══ */
@@ -457,12 +482,13 @@ footer ul a:hover{color:var(--yellow)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes imgscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .62s ease,transform .62s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ══ RESPONSIVE ══ */
 @media(max-width:960px){
-  .hero-inner,.classes-layout,.about-layout,.contact-layout,.socials-grid{grid-template-columns:1fr;gap:36px}
+  .hero-inner,.classes-layout,.about-layout,.contact-layout{grid-template-columns:1fr;gap:36px}
   .hero-slideshow{aspect-ratio:16/9}
   .footer-grid{grid-template-columns:1fr 1fr}
   .process-steps{grid-template-columns:1fr 1fr}
@@ -470,38 +496,29 @@ footer ul a:hover{color:var(--yellow)}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .gal-item.wide{grid-column:span 2}
   .faq-grid{grid-template-columns:1fr}
+  .socials-grid{grid-template-columns:1fr}
+  .gbiz-photo-grid{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:600px){
-.qa-grid{grid-template-columns:1fr 1fr!important}
+  .qa-grid{grid-template-columns:1fr 1fr!important}
   section{padding:60px 5%}
   .form-row,.footer-grid,.modules-list{grid-template-columns:1fr}
   .stats-bar{gap:20px}
   .stat-sep{display:none}
   .hero-inner{gap:32px}
   .process-steps{grid-template-columns:1fr 1fr}
-  .socials-grid{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr 1fr}
-}
-
-/* ══ COURSE TABLE ══ */
-.course-table{display:flex;flex-direction:column}
-.ct-row{display:grid;grid-template-columns:2.5rem 1fr 7rem 7rem;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .2s}
-.ct-row:last-child{border-bottom:none}
-.ct-row:hover{background:rgba(201,162,39,.06)}
-.ct-pop{background:rgba(201,162,39,.08)}
-.ct-num{font-size:.8rem;font-weight:700;color:var(--yellow);opacity:.7}
-.ct-name{font-size:.88rem;font-weight:700;color:var(--white);line-height:1.3}
-.ct-sub{font-size:.74rem;font-weight:400;color:rgba(255,255,255,.55);margin-top:2px}
-.ct-badge{display:inline-block;font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:50px;margin-left:6px;vertical-align:middle}
-.ct-badge.pop{background:var(--yellow);color:var(--blue)}
-.ct-badge.val{background:rgba(34,197,94,.2);color:#4ade80;border:1px solid rgba(34,197,94,.3)}
-.ct-dur{font-size:.8rem;color:rgba(255,255,255,.65);text-align:center}
-.ct-fee{font-size:.95rem;font-weight:700;color:var(--yellow);text-align:right}
-@media(max-width:600px){
   .ct-row{grid-template-columns:2rem 1fr 5rem 5.5rem;gap:8px;padding:10px 14px}
   .ct-fee{font-size:.85rem}
+  .cards-grid{grid-template-columns:1fr}
+  .trust-badge{display:none}
+  .gbiz-photo-grid{grid-template-columns:repeat(2,1fr)}
 }
-
+/* Advanced courses mobile fix */
+@media(max-width:480px){
+  #advanced .cards-grid{grid-template-columns:1fr}
+  #advanced .card{padding:20px}
+}
 </style>
 </head>
 <body>
@@ -521,13 +538,12 @@ footer ul a:hover{color:var(--yellow)}
   </div>
 </div>
 
-<!-- NAV OVERLAY -->
 <div class="nav-overlay" id="navOverlay"></div>
 
 <!-- NAV -->
 <nav class="main-nav">
   <a href="#hero" class="nav-logo">
-    <img src="logo1.png" alt="DANCOM ICT Centre"/>
+    <img src="logo1.png" alt="DANCOM ICT Centre" width="170" height="54" fetchpriority="high"/>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
@@ -543,7 +559,7 @@ footer ul a:hover{color:var(--yellow)}
     <li><a href="#about">About</a></li>
     <li><a href="#contact" class="nav-cta">Contact Us</a></li>
   </ul>
-  <a href="https://wa.me/254795312248" class="btn-yellow nav-cta-desk" target="_blank" rel="noopener" style="font-size:.8rem;padding:9px 16px;border-radius:8px"> <strong>DANCOM ICT CENTRE</strong></a>
+  <a href="https://wa.me/254795312248" class="btn-yellow nav-cta-desk" target="_blank" rel="noopener" style="font-size:.8rem;padding:9px 16px;border-radius:8px"><strong>DANCOM ICT CENTRE</strong></a>
   <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -569,27 +585,29 @@ footer ul a:hover{color:var(--yellow)}
         <div class="hc-item"><strong>✉️ Email</strong><a href="mailto:info@dancomict.co.ke">info@dancomict.co.ke</a></div>
         <div class="hc-item"><strong>🕐 Hours</strong><span>Mon–Sat: 7:30AM – 7:00PM</span><span>Sunday: 2:00PM – 7:00PM</span></div>
       </div>
+      <div style="margin-top:16px" id="openBadge"></div>
     </div>
+    <!-- HERO SLIDESHOW -->
     <div class="hero-slideshow" id="heroSlideshow">
       <div class="hero-slide active">
-        <div class="hero-slide-bg" style="background-image:url('https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg')"></div>
-        <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM ICT Centre banner"/>
-        <div class="slide-caption">DANCOM ICT Centre</div>
+        <div class="hero-slide-bg" style="background-image:url('images/DANCOMICT-BANNER-2026-AI-POWERED.jpg')"></div>
+        <img src="images/DANCOMICT-BANNER-2026-AI-POWERED.jpg" alt="DANCOM ICT Centre 2026 Banner" width="600" height="450" loading="eager"/>
+        <div class="slide-caption">DANCOM ICT Centre — 2026</div>
       </div>
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg')"></div>
-        <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="Our Centre"/>
-        <div class="slide-caption">Our Centre — Rumuruti</div>
+        <div class="hero-slide-bg" style="background-image:url('images/DANCOM-banner.jpg')"></div>
+        <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre" width="600" height="450" loading="lazy"/>
+        <div class="slide-caption">Your One-Stop Digital Centre</div>
       </div>
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg')"></div>
-        <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="Team in action"/>
-        <div class="slide-caption">In Action</div>
+        <div class="hero-slide-bg" style="background-image:url('images/Dancom-exterior.jpg')"></div>
+        <img src="images/Dancom-exterior.jpg" alt="DANCOM Centre Exterior" width="600" height="450" loading="lazy"/>
+        <div class="slide-caption">Find Us in Rumuruti Township</div>
       </div>
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png')"></div>
-        <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="Welcome 2026"/>
-        <div class="slide-caption">Welcome 2026</div>
+        <div class="hero-slide-bg" style="background-image:url('images/Dancom-marketing-solutions.jpg')"></div>
+        <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="600" height="450" loading="lazy"/>
+        <div class="slide-caption">Creative Marketing Solutions</div>
       </div>
       <div class="slide-dots" id="sDots"></div>
       <button class="slide-arrow prev" onclick="changeSlide(-1)">&#8249;</button>
@@ -600,11 +618,11 @@ footer ul a:hover{color:var(--yellow)}
 
 <!-- STATS -->
 <div class="stats-bar">
-  <div class="stat-item"><div class="stat-num" data-target="500" data-suffix="+">0+</div><div class="stat-lbl">Happy Clients</div></div>
+  <div class="stat-item"><div class="stat-num" id="s1">500+</div><div class="stat-lbl">Happy Clients</div></div>
   <div class="stat-sep"></div>
-  <div class="stat-item"><div class="stat-num" data-target="5" data-suffix="+">0+</div><div class="stat-lbl">Years Active</div></div>
+  <div class="stat-item"><div class="stat-num" id="s2">5+</div><div class="stat-lbl">Years Active</div></div>
   <div class="stat-sep"></div>
-  <div class="stat-item"><div class="stat-num" data-target="20" data-suffix="+">0+</div><div class="stat-lbl">ICT Courses</div></div>
+  <div class="stat-item"><div class="stat-num" id="s3">20+</div><div class="stat-lbl">ICT Courses</div></div>
   <div class="stat-sep"></div>
   <div class="stat-item"><div class="stat-num">7/7</div><div class="stat-lbl">Days Open</div></div>
   <div class="stat-sep"></div>
@@ -614,16 +632,16 @@ footer ul a:hover{color:var(--yellow)}
 <!-- QUICK ACTION STRIP -->
 <div style="background:var(--white);padding:18px 5%;border-bottom:1px solid var(--gray-light)">
   <div class="qa-grid" style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
-    <a href="#services" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+    <a href="#services" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
       <span style="font-size:1.6rem">🖨️</span>Printing &amp; Cyber
     </a>
-    <a href="#services" onclick="document.querySelector('#services').scrollIntoView();return false;" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+    <a href="#services" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
       <span style="font-size:1.6rem">🔧</span>Repairs
     </a>
-    <a href="#classes" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+    <a href="#classes" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
       <span style="font-size:1.6rem">🎓</span>ICT Classes
     </a>
-    <a href="#govt" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:var(--blue-pale);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+    <a href="#govt" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border:1.5px solid var(--border);border-radius:12px;text-decoration:none;transition:all .2s;color:var(--blue);font-weight:700;font-size:.82rem;text-align:center" onmouseover="this.style.borderColor='var(--yellow)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
       <span style="font-size:1.6rem">🌐</span>Gov't Services
     </a>
   </div>
@@ -649,24 +667,31 @@ footer ul a:hover{color:var(--yellow)}
 <!-- IMAGE MARQUEE -->
 <div class="img-mq-wrap" aria-hidden="true">
   <div class="img-mq" id="iMarq">
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM ICT Centre Banner" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="DANCOM Marketing Solutions" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="DANCOM Calendar 2026" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="DANCOM Calendar 2025" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="DANCOM Work" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="DANCOM Team" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="DANCOM Centre Rumuruti" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="DANCOM In Action" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="DANCOM Welcome 2026" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM ICT Centre Banner" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="DANCOM Marketing Solutions" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="DANCOM Calendar 2026" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="DANCOM Calendar 2025" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="DANCOM Work" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="DANCOM Team" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="DANCOM Centre Rumuruti" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="DANCOM In Action" loading="lazy" onclick="lb(this)"/>
-    <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/welcome__step_into_something_amazing______newbeginnings__positivevibes_-removebg-preview-edited.png" alt="DANCOM Welcome 2026" loading="lazy" onclick="lb(this)"/>
+    <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/DANCOM-CALENDER-2026.jpg" alt="DANCOM Calendar 2026" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/dancom-calender-2025-finale.jpg" alt="DANCOM Calendar 2025" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Counter.jpg" alt="DANCOM Counter" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/ICT-hub.jpg" alt="ICT Hub" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-Class-Interior.jpeg" alt="Class Interior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Design.jpg" alt="Branding Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Modern-CV-design.jpg" alt="CV Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-cream.png" alt="DANCOM Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-layout.png" alt="DANCOM Layout" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <!-- duplicate set -->
+    <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/DANCOM-CALENDER-2026.jpg" alt="DANCOM Calendar 2026" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/dancom-calender-2025-finale.jpg" alt="DANCOM Calendar 2025" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Counter.jpg" alt="DANCOM Counter" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/ICT-hub.jpg" alt="ICT Hub" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-Class-Interior.jpeg" alt="Class Interior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Design.jpg" alt="Branding Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Modern-CV-design.jpg" alt="CV Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-cream.png" alt="DANCOM Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-layout.png" alt="DANCOM Layout" width="215" height="155" loading="lazy" onclick="lb(this)"/>
   </div>
 </div>
 
@@ -694,11 +719,12 @@ footer ul a:hover{color:var(--yellow)}
         <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 30 Minutes</span><strong style="color:var(--blue)">KSh 30</strong></div>
         <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 1 Hour</span><strong style="color:var(--blue)">KSh 50</strong></div>
         <div style="display:flex;justify-content:space-between;align-items:center;background:var(--blue-pale);border-radius:6px;padding:5px 10px"><span>⏱ 3 Hours</span><strong style="color:var(--blue)">KSh 100</strong></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:var(--yellow);border-radius:6px;padding:5px 10px"><span style="font-weight:700;color:var(--blue)">🌟 Full Day (24hrs)</span><strong style="color:var(--blue)">KSh 300</strong></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,var(--yellow),var(--yellow-deep));border-radius:6px;padding:5px 10px"><span style="font-weight:700;color:var(--blue)">🌟 Full Day (24hrs)</span><strong style="color:var(--blue)">KSh 300</strong></div>
       </div>
       <span class="ctag green" style="margin-top:8px">Pay As You Go · No Hidden Charges</span>
     </div>
   </div>
+
   <div class="group-label reveal">🖨️ Printing, Branding &amp; Digital Marketing</div>
   <div class="cards-grid reveal" style="margin-bottom:40px">
     <div class="card"><div class="card-icon">📄</div><h3>Bulk &amp; Exam Printing</h3><p>High-volume printing for schools, businesses, and institutions.</p><span class="ctag green">Same-day service</span></div>
@@ -708,6 +734,33 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">📣</div><h3>Branding Services</h3><p>Full brand identity packages, T-shirts, caps, and promotional items.</p></div>
     <div class="card"><div class="card-icon">📲</div><h3>Digital Marketing</h3><p>SEO, social media management, digital campaigns, and PR.</p><span class="ctag amber">Monthly packages</span></div>
   </div>
+
+  <!-- BRANDING PORTFOLIO STRIP -->
+  <div class="reveal" style="margin-bottom:40px">
+    <p style="font-size:.8rem;font-weight:700;color:var(--blue-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">🎨 Sample Branding Work — Hover to Pause</p>
+    <div class="portfolio-strip-wrap" style="background:var(--blue-pale);border-radius:10px">
+      <div class="portfolio-strip">
+        <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/K-law-Tshirt.png" alt="K-Law Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Jayson-Jersey.jpg" alt="Branded Jersey" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Modern-CV-design.jpg" alt="CV Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Design.jpg" alt="Branding Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding001.jpg" alt="Branding Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar Design 2026" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar Design 2025" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <!-- duplicate -->
+        <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/K-law-Tshirt.png" alt="K-Law Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Jayson-Jersey.jpg" alt="Branded Jersey" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Modern-CV-design.jpg" alt="CV Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Design.jpg" alt="Branding Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding001.jpg" alt="Branding Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar Design 2026" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar Design 2025" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+      </div>
+    </div>
+  </div>
+
   <div class="group-label reveal">✈️ Travel, Education &amp; Digital Setup</div>
   <div class="cards-grid reveal">
     <div class="card"><div class="card-icon">🛫</div><h3>Travelling Passports</h3><p>Passport application assistance, forms, and document preparation.</p></div>
@@ -717,7 +770,7 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">🌐</div><h3>Web &amp; Digital Setup</h3><p>Email setup, website creation, domain registration, and social media management.</p><span class="ctag">From KSh 2,500</span></div>
   </div>
 
-  <div class="group-label reveal">🔧 Repairs &amp; Technical Services</div>
+  <div class="group-label reveal" style="margin-top:40px">🔧 Repairs &amp; Technical Services</div>
   <div class="cards-grid reveal" style="margin-bottom:16px">
     <div class="card"><div class="card-icon">💻</div><h3>Computer &amp; Laptop Repair</h3><p>Hardware diagnosis, software troubleshooting, OS installation, driver fixes, and full servicing for all brands.</p><span class="ctag green">Same-day service</span></div>
     <div class="card"><div class="card-icon">🖨️</div><h3>Printer Repair &amp; Servicing</h3><p>Printer maintenance, repair, ink system servicing, and full diagnostics for all major printer brands.</p></div>
@@ -725,100 +778,60 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">🔌</div><h3>Electrical &amp; Electronic Repair</h3><p>TVs, amplifiers, power supplies, and general electronic equipment — diagnosed and repaired by our technical team.</p></div>
     <div class="card"><div class="card-icon">🔬</div><h3>Micro-Soldering &amp; PCB Repair</h3><p>Advanced motherboard-level repairs, component replacement, PCB diagnostics, and micro-soldering for complex faults.</p><span class="ctag amber">Advanced</span></div>
   </div>
-  <div style="margin-top:4px;margin-bottom:40px;padding:14px 18px;background:var(--blue-pale);border-radius:10px;border-left:3px solid #1877F2;font-size:.85rem;color:var(--blue)" class="reveal">
+
+  <!-- REPAIR PORTFOLIO STRIP -->
+  <div class="reveal" style="margin-bottom:16px">
+    <p style="font-size:.8rem;font-weight:700;color:var(--blue-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">🔧 Recent Repair Jobs — Hover to Pause</p>
+    <div class="portfolio-strip-wrap" style="background:var(--blue-pale);border-radius:10px">
+      <div class="portfolio-strip">
+        <img src="images/Repair-maintainance.jpg" alt="Repair Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/PC-maintenance.jpg" alt="PC Maintenance" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/linux.jpg" alt="Linux Setup" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Laptop-advert.jpeg" alt="Laptop Repair" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Counter.jpg" alt="Service Counter" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Counter-2.jpg" alt="Centre Interior" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <!-- duplicate -->
+        <img src="images/Repair-maintainance.jpg" alt="Repair Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/PC-maintenance.jpg" alt="PC Maintenance" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/linux.jpg" alt="Linux Setup" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Laptop-advert.jpeg" alt="Laptop Repair" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Counter.jpg" alt="Service Counter" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Counter-2.jpg" alt="Centre Interior" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:4px;margin-bottom:40px;padding:14px 18px;background:linear-gradient(135deg,var(--blue-pale),#dde6ff);border-radius:10px;border-left:3px solid #1877F2;font-size:.85rem;color:var(--blue)" class="reveal">
     📸 <strong>See our latest repair jobs</strong> — before &amp; after photos, transformations, and recent customer jobs on our
     <a href="https://www.facebook.com/share/1EDx4aVNoU/" target="_blank" rel="noopener" style="color:#1877F2;font-weight:700">Facebook page →</a>
   </div>
-
 </section>
 
+<!-- ADVANCED -->
 <section id="advanced">
   <div class="section-center reveal">
     <div class="section-label">Advanced Training</div>
     <h2>Advanced Courses at <em>Manageable Costs</em></h2>
     <p class="section-sub">Go beyond basics — upgrade your skills with our specialist short courses. Each is practical, hands-on, and priced affordably for everyone in Laikipia.</p>
   </div>
-
   <div class="group-label reveal">💻 Digital Business &amp; Tech Skills</div>
   <div class="cards-grid reveal" style="margin-bottom:36px">
-    <div class="card">
-      <div class="card-icon">🤖</div>
-      <h3>AI Fundamentals</h3>
-      <p>Understand how Artificial Intelligence works and how to use AI tools to boost your business and daily productivity.</p>
-      <span class="ctag">Short Course</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">📊</div>
-      <h3>Data Science &amp; Analytics</h3>
-      <p>Learn to collect, analyse, and visualise data using spreadsheets and basic tools — essential for business decisions.</p>
-      <span class="ctag">Short Course</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔐</div>
-      <h3>Cybersecurity Awareness</h3>
-      <p>Protect yourself and your business online — data privacy, safe browsing, password security, and backup strategies.</p>
-      <span class="ctag green">High Demand</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">💼</div>
-      <h3>IT for Business Success</h3>
-      <p>How to use technology effectively to run and grow a business — tools, systems, and digital workflows that save time.</p>
-      <span class="ctag">Short Course</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🛒</div>
-      <h3>Selling &amp; E-Commerce Online</h3>
-      <p>Set up an online shop, use WhatsApp Business, and sell your products or services to customers beyond Rumuruti.</p>
-      <span class="ctag amber">Entrepreneur Pick</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">📱</div>
-      <h3>Social Media Marketing</h3>
-      <p>Create content, grow a following, run promotions, and use Facebook, TikTok, and Instagram to market any business.</p>
-      <span class="ctag amber">Entrepreneur Pick</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🌐</div>
-      <h3>Effective Business Websites</h3>
-      <p>Build and manage a professional business website. Understand hosting, domains, and what makes a site convert visitors.</p>
-      <span class="ctag">Short Course</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🚀</div>
-      <h3>Digital Business Skills</h3>
-      <p>End-to-end course on running a digital business — from online presence to customer management and digital payments.</p>
-      <span class="ctag">Short Course</span>
-    </div>
+    <div class="card"><div class="card-icon">🤖</div><h3>AI Fundamentals</h3><p>Understand how Artificial Intelligence works and how to use AI tools to boost your business and daily productivity.</p><span class="ctag">Short Course</span></div>
+    <div class="card"><div class="card-icon">📊</div><h3>Data Science &amp; Analytics</h3><p>Learn to collect, analyse, and visualise data using spreadsheets and basic tools — essential for business decisions.</p><span class="ctag">Short Course</span></div>
+    <div class="card"><div class="card-icon">🔐</div><h3>Cybersecurity Awareness</h3><p>Protect yourself and your business online — data privacy, safe browsing, password security, and backup strategies.</p><span class="ctag green">High Demand</span></div>
+    <div class="card"><div class="card-icon">💼</div><h3>IT for Business Success</h3><p>How to use technology effectively to run and grow a business — tools, systems, and digital workflows that save time.</p><span class="ctag">Short Course</span></div>
+    <div class="card"><div class="card-icon">🛒</div><h3>Selling &amp; E-Commerce Online</h3><p>Set up an online shop, use WhatsApp Business, and sell your products or services to customers beyond Rumuruti.</p><span class="ctag amber">Entrepreneur Pick</span></div>
+    <div class="card"><div class="card-icon">📱</div><h3>Social Media Marketing</h3><p>Create content, grow a following, run promotions, and use Facebook, TikTok, and Instagram to market any business.</p><span class="ctag amber">Entrepreneur Pick</span></div>
+    <div class="card"><div class="card-icon">🌐</div><h3>Effective Business Websites</h3><p>Build and manage a professional business website. Understand hosting, domains, and what makes a site convert visitors.</p><span class="ctag">Short Course</span></div>
+    <div class="card"><div class="card-icon">🚀</div><h3>Digital Business Skills</h3><p>End-to-end course on running a digital business — from online presence to customer management and digital payments.</p><span class="ctag">Short Course</span></div>
   </div>
-
   <div class="group-label reveal">🎨 Design, Networks &amp; Security Systems</div>
   <div class="cards-grid reveal">
-    <div class="card">
-      <div class="card-icon">🎨</div>
-      <h3>Graphic Design</h3>
-      <p>Master Adobe Photoshop, Illustrator, and CorelDRAW. Design logos, banners, flyers, certificates, and branded materials.</p>
-      <span class="ctag green">Job-Ready Skill</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🖥️</div>
-      <h3>Web Design &amp; Development</h3>
-      <p>Build modern, mobile-friendly websites from scratch using HTML, CSS, and beginner-friendly platforms. Launch real sites.</p>
-      <span class="ctag green">Job-Ready Skill</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔗</div>
-      <h3>Network Infrastructure</h3>
-      <p>Set up and manage LAN/WAN and wireless networks. IP addressing, router configuration, and troubleshooting connectivity.</p>
-      <span class="ctag">Technical Course</span>
-    </div>
-    <div class="card">
-      <div class="card-icon">📷</div>
-      <h3>CCTV Installation &amp; Surveillance</h3>
-      <p>Install, configure, and maintain CCTV camera systems for homes, businesses, and institutions. Full practical training.</p>
-      <span class="ctag">Technical Course</span>
-    </div>
+    <div class="card"><div class="card-icon">🎨</div><h3>Graphic Design</h3><p>Master Adobe Photoshop, Illustrator, and CorelDRAW. Design logos, banners, flyers, certificates, and branded materials.</p><span class="ctag green">Job-Ready Skill</span></div>
+    <div class="card"><div class="card-icon">🖥️</div><h3>Web Design &amp; Development</h3><p>Build modern, mobile-friendly websites from scratch using HTML, CSS, and beginner-friendly platforms. Launch real sites.</p><span class="ctag green">Job-Ready Skill</span></div>
+    <div class="card"><div class="card-icon">🔗</div><h3>Network Infrastructure</h3><p>Set up and manage LAN/WAN and wireless networks. IP addressing, router configuration, and troubleshooting connectivity.</p><span class="ctag">Technical Course</span></div>
+    <div class="card"><div class="card-icon">📷</div><h3>CCTV Installation &amp; Surveillance</h3><p>Install, configure, and maintain CCTV camera systems for homes, businesses, and institutions. Full practical training.</p><span class="ctag">Technical Course</span></div>
   </div>
-
   <div style="text-align:center;margin-top:40px" class="reveal">
     <p style="color:var(--gray);font-size:.95rem;margin-bottom:20px">Interested in any advanced course? WhatsApp us for current schedules and pricing.</p>
     <a href="https://wa.me/254795312248?text=I'm%20interested%20in%20an%20Advanced%20Course%20at%20DANCOM" class="btn-yellow" target="_blank" rel="noopener">Enquire About Advanced Courses →</a>
@@ -850,46 +863,38 @@ footer ul a:hover{color:var(--yellow)}
 <!-- ICT CLASSES -->
 <section id="classes" style="background:linear-gradient(160deg,var(--blue-deep) 0%,#0D1B5C 60%,#111d6b 100%)">
   <div class="section-center reveal">
-    <div class="section-label" style="color:rgba(201,162,39,.85)">Professional ICT Training · 2026</div>
+    <div class="section-label" style="background:linear-gradient(90deg,rgba(201,162,39,.85),#FFD100);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Professional ICT Training · 2026</div>
     <h2 style="color:var(--white)">Learn Skills That Build <em style="color:var(--yellow)">Real Careers</em></h2>
     <p class="section-sub" style="color:rgba(255,255,255,.7)">Practical, hands-on training with certificates, career support, and new intakes every month. From KSh 4,500 — quality training for every budget.</p>
   </div>
-
-  <!-- COURSE PRICE TABLE -->
   <div class="reveal" style="margin-bottom:48px">
     <div style="background:rgba(255,255,255,.05);border:1px solid rgba(201,162,39,.25);border-radius:16px;overflow:hidden;max-width:900px;margin:0 auto">
-      <!-- Table header -->
       <div style="background:linear-gradient(135deg,var(--yellow),var(--yellow-deep));padding:14px 20px;display:grid;grid-template-columns:2.5rem 1fr 7rem 7rem;gap:12px;align-items:center">
         <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em">#</div>
         <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em">Course</div>
         <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;text-align:center">Duration</div>
         <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;text-align:right">Fee (KSh)</div>
       </div>
-      <!-- Rows -->
       <div class="course-table">
         <div class="ct-row ct-pop"><div class="ct-num">01</div><div class="ct-name">Basic Computer Package <span class="ct-badge pop">⭐ Most Popular</span><div class="ct-sub">Certificate Included</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">4,500</div></div>
-        <div class="ct-row"><div class="ct-num">02</div><div class="ct-name">Advanced MS Office <div class="ct-sub">Word, Excel, PowerPoint, Access</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">10,000</div></div>
+        <div class="ct-row"><div class="ct-num">02</div><div class="ct-name">Advanced MS Office<div class="ct-sub">Word, Excel, PowerPoint, Access</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">10,000</div></div>
         <div class="ct-row"><div class="ct-num">03</div><div class="ct-name">QuickBooks Accounting <span class="ct-badge val">Best Value</span></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">12,000</div></div>
         <div class="ct-row"><div class="ct-num">04</div><div class="ct-name">Computer Repair &amp; Maintenance</div><div class="ct-dur">8 Weeks</div><div class="ct-fee">25,000</div></div>
-        <div class="ct-row"><div class="ct-num">05</div><div class="ct-name">Graphic Design <div class="ct-sub">Photoshop, CorelDRAW, Illustrator</div></div><div class="ct-dur">6 Weeks</div><div class="ct-fee">18,000</div></div>
+        <div class="ct-row"><div class="ct-num">05</div><div class="ct-name">Graphic Design<div class="ct-sub">Photoshop, CorelDRAW, Illustrator</div></div><div class="ct-dur">6 Weeks</div><div class="ct-fee">18,000</div></div>
         <div class="ct-row"><div class="ct-num">06</div><div class="ct-name">Web Design &amp; Development</div><div class="ct-dur">8 Weeks</div><div class="ct-fee">22,000</div></div>
-        <div class="ct-row"><div class="ct-num">07</div><div class="ct-name">Digital Marketing <div class="ct-sub">Social Media &amp; Online Marketing</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">15,000</div></div>
+        <div class="ct-row"><div class="ct-num">07</div><div class="ct-name">Digital Marketing<div class="ct-sub">Social Media &amp; Online Marketing</div></div><div class="ct-dur">4 Weeks</div><div class="ct-fee">15,000</div></div>
         <div class="ct-row"><div class="ct-num">08</div><div class="ct-name">Networking (LAN &amp; WAN)</div><div class="ct-dur">6 Weeks</div><div class="ct-fee">20,000</div></div>
         <div class="ct-row"><div class="ct-num">09</div><div class="ct-name">CCTV Installation &amp; Configuration</div><div class="ct-dur">5 Weeks</div><div class="ct-fee">18,000</div></div>
         <div class="ct-row"><div class="ct-num">10</div><div class="ct-name">Software Installation &amp; Troubleshooting</div><div class="ct-dur">4 Weeks</div><div class="ct-fee">12,000</div></div>
-        <div class="ct-row"><div class="ct-num">11</div><div class="ct-name">Programming <div class="ct-sub">Python, HTML, CSS, JavaScript Basics</div></div><div class="ct-dur">8 Weeks</div><div class="ct-fee">25,000</div></div>
+        <div class="ct-row"><div class="ct-num">11</div><div class="ct-name">Programming<div class="ct-sub">Python, HTML, CSS, JavaScript Basics</div></div><div class="ct-dur">8 Weeks</div><div class="ct-fee">25,000</div></div>
         <div class="ct-row"><div class="ct-num">12</div><div class="ct-name">Data Analysis with Excel</div><div class="ct-dur">4 Weeks</div><div class="ct-fee">15,000</div></div>
       </div>
-      <!-- Footer note -->
       <div style="padding:12px 20px;background:rgba(201,162,39,.08);border-top:1px solid rgba(201,162,39,.2);font-size:.78rem;color:rgba(255,255,255,.65);text-align:center">
         📅 New Intakes Every Month &nbsp;·&nbsp; 🎓 Certificate of Completion Awarded &nbsp;·&nbsp; 💻 Hands-On Practical Training
       </div>
     </div>
   </div>
-
-  <!-- INCLUDED + PAYMENT POLICY + ENROL -->
   <div style="max-width:900px;margin:0 auto 40px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px" class="reveal">
-    <!-- Included -->
     <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
       <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">✅ Included in All Courses</div>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
@@ -900,7 +905,6 @@ footer ul a:hover{color:var(--yellow)}
         <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Free AI Guide for Beginners</li>
       </ul>
     </div>
-    <!-- Payment Policy -->
     <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
       <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">💳 Payment Policy</div>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
@@ -910,7 +914,6 @@ footer ul a:hover{color:var(--yellow)}
         <li style="font-size:.84rem;color:rgba(255,255,255,.85);display:flex;gap:8px"><span style="color:var(--yellow)">▶</span>Fees once paid are non-transferable</li>
       </ul>
     </div>
-    <!-- Career Outcomes -->
     <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:20px">
       <div style="font-size:.72rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">🚀 Career Opportunities</div>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
@@ -922,8 +925,6 @@ footer ul a:hover{color:var(--yellow)}
       </ul>
     </div>
   </div>
-
-  <!-- Enrol CTA + Payment Methods -->
   <div class="classes-layout reveal">
     <div>
       <a href="https://wa.me/254795312248?text=I'm%20interested%20in%20ICT%20Classes%20at%20DANCOM" class="btn-yellow" target="_blank" rel="noopener" style="margin-bottom:20px;display:inline-flex;font-size:1rem;padding:15px 28px">🎓 Enrol Now — WhatsApp Us →</a>
@@ -947,9 +948,7 @@ footer ul a:hover{color:var(--yellow)}
         </ul>
       </div>
     </div>
-
     <div>
-      <!-- Payment Methods -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.25);border-radius:14px;overflow:hidden;margin-bottom:14px">
         <div style="background:linear-gradient(135deg,var(--yellow),var(--yellow-deep));padding:14px 20px;display:flex;align-items:center;gap:10px">
           <span style="font-size:1.3rem">💳</span>
@@ -994,7 +993,6 @@ footer ul a:hover{color:var(--yellow)}
           </div>
         </div>
       </div>
-      <!-- Bridge + Global cert cards -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.22);border-radius:12px;padding:18px;margin-bottom:12px">
         <div style="font-size:1.3rem;margin-bottom:8px">🌉</div>
         <h3 style="font-size:.97rem;font-weight:700;color:var(--white);margin-bottom:6px">DANCOM as Your Bridge Centre</h3>
@@ -1009,7 +1007,6 @@ footer ul a:hover{color:var(--yellow)}
   </div>
 </section>
 
-
 <!-- TEAM -->
 <section id="team">
   <div class="section-center reveal">
@@ -1019,7 +1016,7 @@ footer ul a:hover{color:var(--yellow)}
   </div>
   <div class="team-grid">
     <div class="team-card reveal">
-      <img class="team-avatar" src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="Daniel Migwi Kanyoro — CEO" onerror="this.style.display='none'"/>
+      <img class="team-avatar" src="images/Daniel-migwi-kanyoro-ppt.jpg" alt="Daniel Migwi Kanyoro — CEO" width="88" height="88" loading="lazy" onerror="this.style.display='none'"/>
       <h3>Daniel Migwi K.</h3>
       <div class="team-role">Chief Executive Officer</div>
       <p>Founder and visionary behind DANCOM. Leads strategy, client relations, and technical training delivery.</p>
@@ -1063,36 +1060,36 @@ footer ul a:hover{color:var(--yellow)}
   </div>
   <div class="gallery-grid reveal">
     <div class="gal-item wide" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg" alt="DANCOM Banner"/>
+      <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="430" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>DANCOM ICT Centre</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/danielmigwikanyoro6044086539452022687.jpg" alt="Team"/>
-      <div class="gal-overlay"><span>Our Team</span></div>
+      <img src="images/Counter.jpg" alt="Our Counter" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Our Counter</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-09-at-16.47.19.jpeg" alt="Centre"/>
-      <div class="gal-overlay"><span>Our Centre</span></div>
+      <img src="images/Counter-2.jpg" alt="Centre Interior" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Centre Interior</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancommarketingsolutions2884105647136936414.jpg" alt="Marketing"/>
+      <img src="images/Dancom-marketing-solutions.jpg" alt="Marketing Solutions" width="215" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>Marketing Solutions</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2026-finale.png" alt="Calendar 2026"/>
-      <div class="gal-overlay"><span>Calendar 2026</span></div>
+      <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar 2026" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Calendar 2026 Design</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/dancom-calender-2025-finale.png" alt="Calendar 2025"/>
-      <div class="gal-overlay"><span>Calendar 2025</span></div>
+      <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar 2025" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Calendar 2025 Design</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2026/01/img-20260102-wa00016905248432070834108-edited.jpg" alt="In Action"/>
-      <div class="gal-overlay"><span>In Action</span></div>
+      <img src="images/Dancom-Class-Interior.jpeg" alt="Class Interior" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Training Space</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-      <img src="https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/1729691903518.jpg" alt="Work"/>
-      <div class="gal-overlay"><span>Our Work</span></div>
+      <img src="images/ICT-hub.jpg" alt="ICT Hub" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>ICT Hub</span></div>
     </div>
   </div>
 </section>
@@ -1117,16 +1114,27 @@ footer ul a:hover{color:var(--yellow)}
           data-unique-id="dancomictcentre"
           data-embed-type="creator"
           style="max-width:100%;min-width:288px;border-radius:10px;overflow:hidden">
-          <section>
-            <a target="_blank" href="https://www.tiktok.com/@dancomictcentre?refer=creator_embed">
-              @dancomictcentre
-            </a>
-          </section>
+          <section><a target="_blank" href="https://www.tiktok.com/@dancomictcentre?refer=creator_embed">@dancomictcentre</a></section>
         </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
       </div>
     </div>
   </div>
+
+  <!-- GOOGLE BUSINESS PHOTOS -->
+  <div class="gbiz-photos reveal" style="margin-top:32px">
+    <h3>📍 See Us on Google Business</h3>
+    <p>Real photos of our centre, team, and work — straight from our Google Business listing.</p>
+    <div class="gbiz-photo-grid">
+      <img src="images/Dancom-exterior.jpg" alt="DANCOM ICT Centre Exterior" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/Dancom-Class-Interior.jpeg" alt="Class Interior" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/ICT-hub.jpg" alt="ICT Hub" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/Counter.jpg" alt="Service Counter" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/Daniel-migwi-kanyoro-ppt.jpg" alt="CEO Daniel Migwi" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/DANCOM-banner.jpg" alt="DANCOM Banner" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+    </div>
+    <a href="https://g.co/kgs/3c8EFh2" target="_blank" rel="noopener" class="btn-yellow" style="display:inline-flex;margin:0 auto">📍 View All Photos on Google →</a>
+  </div>
+
   <div class="social-links-row reveal">
     <a href="https://www.facebook.com/share/1EDx4aVNoU/" class="soc-btn fb" target="_blank" rel="noopener">📘 Facebook</a>
     <a href="https://wa.me/254795312248" class="soc-btn wa" target="_blank" rel="noopener">💬 WhatsApp</a>
@@ -1147,6 +1155,7 @@ footer ul a:hover{color:var(--yellow)}
     </a>
   </div>
 </section>
+
 <!-- FAQ -->
 <section id="faq">
   <div class="section-center reveal">
@@ -1160,8 +1169,8 @@ footer ul a:hover{color:var(--yellow)}
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can I send documents via WhatsApp?<span class="faq-icon">+</span></button><div class="faq-body"><p>Yes! Send your files to <a href="https://wa.me/254795312248" target="_blank" rel="noopener">0795 312 248</a> on WhatsApp and we'll print them ready for collection. Great for urgent jobs.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Can you help with eCitizen from scratch?<span class="faq-icon">+</span></button><div class="faq-body"><p>Absolutely. We help you create your eCitizen account and process any service — NTSA, Good Conduct, KRA, NSSF and more.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Do you accept beginners for ICT classes?<span class="faq-icon">+</span></button><div class="faq-body"><p>Yes — we welcome total beginners. Our training starts from absolute basics and progresses at your pace. No prior experience needed.</p></div></div>
-    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What certificate do I get upon completion?<span class="faq-icon">+</span></button><div class="faq-body"><p>You receive a <strong>DANCOM ICT Centre Skills Certificate</strong> — printed on professional cardstock with a unique seal and a Skills Transcript listing every competency you mastered. Our training follows the national KASNEB/KNEC curriculum. We also assist graduates to register as private candidates at official exam centres for the national qualification, giving you both our certificate and the national path.</p></div></div>
-    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon">+</span></button><div class="faq-body"><p>We accept M-Pesa and cash. For larger orders or course fees, M-Pesa is preferred. Ask for our Till or Paybill number at the counter.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What certificate do I get upon completion?<span class="faq-icon">+</span></button><div class="faq-body"><p>You receive a <strong>DANCOM ICT Centre Skills Certificate</strong> — printed on professional cardstock with a unique seal and a Skills Transcript listing every competency you mastered.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon">+</span></button><div class="faq-body"><p>We accept M-Pesa (Paybill 247247, Account 0795312248), Pochi La Biashara, Equity Bank (*247#), and cash. Official receipt issued for every payment.</p></div></div>
     <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Where exactly are you located?<span class="faq-icon">+</span></button><div class="faq-body"><p>We are located <strong>opposite Rumuruti Day Senior School</strong>, Rumuruti Township, Laikipia West Sub-county. Open Mon–Sat 7:30AM–7PM and Sunday 2PM–7PM.</p></div></div>
   </div>
 </section>
@@ -1178,8 +1187,8 @@ footer ul a:hover{color:var(--yellow)}
     <div class="why-card reveal"><div class="why-num">02</div><div class="icon">💰</div><h3>Affordable &amp; Transparent Pricing</h3><p>Clear, fair prices for everyone — students, businesses, and government clients alike. No hidden charges.</p></div>
     <div class="why-card reveal"><div class="why-num">03</div><div class="icon">⚡</div><h3>Fast, Same-Day Turnaround</h3><p>Most printing and document jobs completed within the hour. Training intake always open.</p></div>
     <div class="why-card reveal"><div class="why-num">04</div><div class="icon">🏆</div><h3>Skills-First ICT Training</h3><p>Curriculum based on national KASNEB/KNEC standards. You leave job-ready — with a Skills Certificate, a digital portfolio, and internship placement at a local Rumuruti business.</p></div>
-    <div class="why-card reveal"><div class="why-num">05</div><div class="icon">🌐</div><h3>eCitizen &amp; Gov't Partner</h3><p>Authorised for eCitizen, NTSA, KRA, SHA, NSSF, KUCCPS, NTSA, KRA, HELB, TSC, Good Conduct &amp; CRB services.</p></div>
-    <div class="why-card reveal"><div class="why-num">06</div><div class="icon">🤖</div><h3>AI-Powered + Global Pathways</h3><p>Free AI Guide on enrolment. We also guide students toward Google Digital Toolkit &amp; Microsoft Fundamentals — free global certifications that complement your DANCOM training.</p></div>
+    <div class="why-card reveal"><div class="why-num">05</div><div class="icon">🌐</div><h3>eCitizen &amp; Gov't Partner</h3><p>Authorised for eCitizen, NTSA, KRA, SHA, NSSF, KUCCPS, HELB, TSC, Good Conduct &amp; CRB services.</p></div>
+    <div class="why-card reveal"><div class="why-num">06</div><div class="icon">🤖</div><h3>AI-Powered + Global Pathways</h3><p>Free AI Guide on enrolment. We also guide students toward Google Digital Toolkit &amp; Microsoft Fundamentals — free global certifications.</p></div>
     <div class="why-card reveal"><div class="why-num">07</div><div class="icon">🔐</div><h3>Secure Document Handling</h3><p>Confidential documents handled with strict privacy standards — no copies retained without consent.</p></div>
     <div class="why-card reveal"><div class="why-num">08</div><div class="icon">📍</div><h3>Central Rumuruti Location</h3><p>Opposite Rumuruti Day Senior School — easily accessible from across Laikipia West Sub-county.</p></div>
   </div>
@@ -1193,36 +1202,12 @@ footer ul a:hover{color:var(--yellow)}
     <p class="section-sub">Real feedback from real people — students, businesses, and community members we've served since 2021.</p>
   </div>
   <div class="testi-grid">
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">Nilifanya KRA iTax returns hapa na ilikuwa rahisi sana. Hawakuchukua muda mrefu na bei ni nafuu kabisa. Nitarudi tena bila shaka.</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#026bff,#0080ff)">SW</div><div class="testi-info"><strong>Lawrence King'ori W.</strong><span>eCitizen / KRA Client, Rumuruti</span></div></div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">I enrolled for the computer classes and within 4 weeks I could use Excel formulas and format professional Word documents. I left with a real portfolio of my work. Highly recommend DANCOM ICT CENTRE to anyone in Laikipia.</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#e0941a,#f5a623)">NL</div><div class="testi-info"><strong>Naomi Lentiyoi</strong><span>ICT Training Graduate, Laikipia North</span></div></div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">Walipiga banner yangu ya biashara na ilikuwa ya ubora wa juu sana. Graphic design yao ni professional kabisa. Wateja wangu wanauliza ilifanywa wapi!</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#16a34a,#22c55e)">LE</div><div class="testi-info"><strong>Lodinyang Ekiru</strong><span>Branding &amp; Printing Client, Laikipia West</span></div></div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">Good Conduct certificate yangu ilikuwa tayari haraka kuliko nilivyotegemea. Staff ni wa karibu na wanajua kazi yao. Ninarudi kila wakati nahitaji msaada wa serikali.</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">CR</div><div class="testi-info"><strong>Chebet Rotich</strong><span>Government Services Client, Laikipia</span></div></div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">Our school uses DANCOM for all bulk exam printing. They are fast, accurate, and confidential. We've been coming here for over two years — never disappointed.</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#dc2626,#ef4444)">NG</div><div class="testi-info"><strong>Nkirote Gikunda</strong><span>School Administrator, Laikipia</span></div></div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">DANCOM helped me with my passport application from start to finish. Very patient, professional, and affordable. I was done in one sitting. Highly recommended.</p>
-      <div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#0A2472,#1B3FA0)">AN</div><div class="testi-info"><strong>Agnes Njeri</strong><span>Passport Application Client, Rumuruti</span></div></div>
-    </div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">Nilifanya KRA iTax returns hapa na ilikuwa rahisi sana. Hawakuchukua muda mrefu na bei ni nafuu kabisa. Nitarudi tena bila shaka.</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#026bff,#0080ff)">SW</div><div class="testi-info"><strong>Lawrence King'ori W.</strong><span>eCitizen / KRA Client, Rumuruti</span></div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">I enrolled for the computer classes and within 4 weeks I could use Excel formulas and format professional Word documents. I left with a real portfolio of my work. Highly recommend DANCOM ICT CENTRE to anyone in Laikipia.</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#e0941a,#f5a623)">NL</div><div class="testi-info"><strong>Naomi Lentiyoi</strong><span>ICT Training Graduate, Laikipia North</span></div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">Walipiga banner yangu ya biashara na ilikuwa ya ubora wa juu sana. Graphic design yao ni professional kabisa. Wateja wangu wanauliza ilifanywa wapi!</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#16a34a,#22c55e)">LE</div><div class="testi-info"><strong>Lodinyang Ekiru</strong><span>Branding &amp; Printing Client, Laikipia West</span></div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">Good Conduct certificate yangu ilikuwa tayari haraka kuliko nilivyotegemea. Staff ni wa karibu na wanajua kazi yao. Ninarudi kila wakati nahitaji msaada wa serikali.</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">CR</div><div class="testi-info"><strong>Chebet Rotich</strong><span>Government Services Client, Laikipia</span></div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">Our school uses DANCOM for all bulk exam printing. They are fast, accurate, and confidential. We've been coming here for over two years — never disappointed.</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#dc2626,#ef4444)">NG</div><div class="testi-info"><strong>Nkirote Gikunda</strong><span>School Administrator, Laikipia</span></div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">DANCOM helped me with my passport application from start to finish. Very patient, professional, and affordable. I was done in one sitting. Highly recommended.</p><div class="testi-author"><div class="testi-init" style="background:linear-gradient(135deg,#0A2472,#1B3FA0)">AN</div><div class="testi-info"><strong>Agnes Njeri</strong><span>Passport Application Client, Rumuruti</span></div></div></div>
   </div>
 </section>
 
@@ -1252,6 +1237,10 @@ footer ul a:hover{color:var(--yellow)}
         <div class="about-stat"><div class="num">500+</div><div class="lbl">Clients Served</div></div>
         <div class="about-stat"><div class="num">7</div><div class="lbl">Days a Week</div></div>
         <div class="about-stat"><div class="num">20+</div><div class="lbl">ICT Courses</div></div>
+      </div>
+      <!-- Centre photo -->
+      <div style="margin-top:20px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-lg)">
+        <img src="images/Dancom-exterior.jpg" alt="DANCOM ICT Centre Exterior — Rumuruti" width="600" height="300" loading="lazy" style="width:100%;height:220px;object-fit:cover"/>
       </div>
     </div>
     <div class="reveal">
@@ -1319,27 +1308,13 @@ footer ul a:hover{color:var(--yellow)}
             <option>Data Analysis with Excel (KSh 15,000)</option>
           </optgroup>
           <optgroup label="Government Services">
-            <option>eCitizen Services</option>
-            <option>NTSA / Driving Licence</option>
-            <option>Good Conduct Certificate</option>
-            <option>KRA / iTax Services</option>
-            <option>NSSF / SHA Services</option>
-            <option>HELB / HEF / KUCCPS</option>
-            <option>TSC Services</option>
-            <option>Business Registration</option>
+            <option>eCitizen Services</option><option>NTSA / Driving Licence</option><option>Good Conduct Certificate</option><option>KRA / iTax Services</option><option>NSSF / SHA Services</option><option>HELB / HEF / KUCCPS</option><option>TSC Services</option><option>Business Registration</option>
           </optgroup>
           <optgroup label="Repairs &amp; Technical">
-            <option>Computer / Laptop Repair</option>
-            <option>Printer Repair &amp; Servicing</option>
-            <option>Phone / Tablet Repair</option>
-            <option>Electrical / Electronic Repair</option>
-            <option>Micro-Soldering / PCB Repair</option>
+            <option>Computer / Laptop Repair</option><option>Printer Repair &amp; Servicing</option><option>Phone / Tablet Repair</option><option>Electrical / Electronic Repair</option><option>Micro-Soldering / PCB Repair</option>
           </optgroup>
           <optgroup label="WiFi Hotspot">
-            <option>WiFi — 30 Minutes (KSh 30)</option>
-            <option>WiFi — 1 Hour (KSh 50)</option>
-            <option>WiFi — 3 Hours (KSh 100)</option>
-            <option>WiFi — Full Day (KSh 300)</option>
+            <option>WiFi — 30 Minutes (KSh 30)</option><option>WiFi — 1 Hour (KSh 50)</option><option>WiFi — 3 Hours (KSh 100)</option><option>WiFi — Full Day (KSh 300)</option>
           </optgroup>
           <optgroup label="Branding &amp; Digital"><option>Graphic Design</option><option>Digital Printing / Branding</option><option>Digital Marketing</option><option>Web &amp; Digital Setup</option></optgroup>
           <optgroup label="Travel &amp; Education"><option>Passport / Visa Application</option><option>Scholarships &amp; Bursaries</option></optgroup>
@@ -1356,14 +1331,13 @@ footer ul a:hover{color:var(--yellow)}
     </form>
   </div>
 </section>
-
 </main>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="f-brand">
-      <div class="f-logo"><img src="logo1.png" alt="DANCOM ICT Centre"/></div>
+      <div class="f-logo"><img src="logo1.png" alt="DANCOM ICT Centre" width="200" height="58" loading="lazy"/></div>
       <p>A professionally established ICT service provider in Rumuruti Township, Laikipia County. Founded May 2021. Committed to quality and community growth.</p>
       <div class="f-socials">
         <a href="https://www.facebook.com/share/1EDx4aVNoU/" class="sbtn" target="_blank" rel="noopener" title="Facebook">f</a>
@@ -1420,9 +1394,15 @@ footer ul a:hover{color:var(--yellow)}
 
 <!-- FLOATING BUTTONS -->
 <div class="floaters">
-  <a href="https://wa.me/254795312248" class="fl-btn fl-wa" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+  <a href="https://wa.me/254795312248" class="fl-btn fl-wa" target="_blank" rel="noopener" title="WhatsApp Us">💬</a>
   <a href="tel:+254795312248" class="fl-btn fl-call" title="Call Us">📞</a>
 </div>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<!-- TRUST BADGE -->
+<div class="trust-badge" id="trustBadge">⭐ <span>500+</span> Clients Served</div>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lbox" onclick="closeLb()">
@@ -1433,9 +1413,9 @@ footer ul a:hover{color:var(--yellow)}
 <!-- TOAST -->
 <div class="toast" id="toast">✅ Message received! We'll reply within a few hours.</div>
 
-<!-- JSON-LD -->
+<!-- JSON-LD FAQ -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"DANCOM ICT Centre","image":"https://dancomictcntr.wordpress.com/wp-content/uploads/2025/12/dancomictcentrebannerpng_page14664386660802545097.jpg","url":"https://dancomict.co.ke","telephone":["+254795312248","+254783709080"],"email":"info@dancomict.co.ke","foundingDate":"2021","address":{"@type":"PostalAddress","streetAddress":"Opposite Rumuruti Day Senior School","addressLocality":"Rumuruti","addressRegion":"Laikipia County","addressCountry":"KE"},"geo":{"@type":"GeoCoordinates","latitude":"0.268","longitude":"36.535"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"14:00","closes":"19:00"}],"priceRange":"KSh 4,500 - KSh 25,000","description":"DANCOM ICT Centre — Fast, Reliable, One-Stop Digital Services in Rumuruti, Laikipia County."}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do ICT classes cost?","acceptedAnswer":{"@type":"Answer","text":"Courses range from KSh 4,500 (Basic Computer Package) up to KSh 25,000. Every course includes practical training, notes, Certificate of Completion, and career support."}},{"@type":"Question","name":"Where is DANCOM ICT Centre located?","acceptedAnswer":{"@type":"Answer","text":"Opposite Rumuruti Day Senior School, Rumuruti Township, Laikipia West Sub-county. Open Mon–Sat 7:30AM–7PM, Sunday 2PM–7PM."}}]}
 </script>
 
 <!-- MAIN JS -->
@@ -1444,13 +1424,20 @@ footer ul a:hover{color:var(--yellow)}
 const burger=document.getElementById('burger');
 const navLinks=document.getElementById('navLinks');
 const overlay=document.getElementById('navOverlay');
-
 function openNav(){burger.classList.add('open');navLinks.classList.add('open');overlay.classList.add('open');document.body.style.overflow='hidden'}
 function closeNav(){burger.classList.remove('open');navLinks.classList.remove('open');overlay.classList.remove('open');document.body.style.overflow=''}
-
 burger.addEventListener('click',()=>navLinks.classList.contains('open')?closeNav():openNav());
 overlay.addEventListener('click',closeNav);
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
+
+/* ── ACTIVE NAV ON SCROLL ── */
+const sections=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.nav-links a[href^="#"]');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id});
+  navAs.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+cur)a.classList.add('active')});
+},{passive:true});
 
 /* ── HERO SLIDESHOW ── */
 (function(){
@@ -1481,20 +1468,36 @@ const ro=new IntersectionObserver(es=>{
 },{threshold:.09});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-/* ── STAT COUNTERS ── */
-const co=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(e.isIntersecting){
-      const el=e.target,target=+el.dataset.target;
-      if(!target)return;
-      const suffix=el.dataset.suffix||'',dur=1800,step=target/dur*16;
-      let start=0;
-      const t=setInterval(()=>{start+=step;if(start>=target){el.textContent=target+suffix;clearInterval(t)}else{el.textContent=Math.floor(start)+suffix}},16);
-      co.unobserve(el);
-    }
-  });
-},{threshold:.5});
-document.querySelectorAll('.stat-num[data-target]').forEach(el=>co.observe(el));
+/* ── STAT COUNTERS — run immediately on load ── */
+function animateCounter(el,target,suffix){
+  const dur=2000,step=target/dur*16;
+  let val=0;
+  const t=setInterval(()=>{
+    val+=step;
+    if(val>=target){el.textContent=target+suffix;clearInterval(t)}
+    else el.textContent=Math.floor(val)+suffix;
+  },16);
+}
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    animateCounter(document.getElementById('s1'),500,'+');
+    animateCounter(document.getElementById('s2'),5,'+');
+    animateCounter(document.getElementById('s3'),20,'+');
+  },400);
+});
+
+/* ── OPEN NOW BADGE ── */
+(function(){
+  const now=new Date();
+  const day=now.getDay();// 0=Sun
+  const h=now.getHours(),m=now.getMinutes();
+  const mins=h*60+m;
+  let isOpen=false;
+  if(day>=1&&day<=6)isOpen=(mins>=450&&mins<1140);// Mon-Sat 7:30-19:00
+  else if(day===0)isOpen=(mins>=840&&mins<1140);// Sun 14:00-19:00
+  const badge=document.getElementById('openBadge');
+  const opensAt=day===0?'2:00 PM':'7:30 AM';const statusText=isOpen?'Open Now':'Closed Now — Opens '+opensAt;badge.innerHTML='<span class="open-now-badge '+(isOpen?'open':'closed')+'"><span class="open-dot"></span>'+statusText+'</span>';
+})();
 
 /* ── LIGHTBOX ── */
 function lb(img){
@@ -1513,7 +1516,16 @@ function toggleFaq(btn){
   if(!isOpen)item.classList.add('open');
 }
 
-/* ── CONTACT FORM (WhatsApp redirect) ── */
+/* ── BACK TO TOP + TRUST BADGE ── */
+const backTop=document.getElementById('backTop');
+const trustBadge=document.getElementById('trustBadge');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  backTop.classList.toggle('show',y>400);
+  trustBadge.classList.toggle('show',y>600&&y<3000);
+},{passive:true});
+
+/* ── CONTACT FORM ── */
 function handleSubmit(e){
   e.preventDefault();
   const f=e.target;
@@ -1536,15 +1548,12 @@ function handleSubmit(e){
 }
 </script>
 
-<!-- TikTok -->
 <script async defer src="https://www.tiktok.com/embed.js"></script>
-<!-- Facebook SDK -->
 <div id="fb-root"></div>
 <script>
 window.fbAsyncInit=function(){if(window.FB)FB.init({xfbml:1,version:'v18.0'})};
 (function(){if(document.getElementById('fb-jssdk'))return;var s=document.createElement('script');s.id='fb-jssdk';s.src='https://connect.facebook.net/en_US/sdk.js';s.async=true;s.defer=true;s.crossOrigin='anonymous';document.body.appendChild(s)})();
 </script>
-<!-- Tidio Chat -->
 <script src="//code.tidio.co/6be69iijqc7uxkehoajnzznfpjxj2wci.js" async></script>
 <script src="https://cdn.counter.dev/script.js" data-id="9f077d06-1bea-436e-953f-3839b74607f1" data-utcoffset="3"></script>
 </body>
