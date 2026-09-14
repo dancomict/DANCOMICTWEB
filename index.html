@@ -1496,7 +1496,7 @@ window.addEventListener('load',()=>{
   if(day>=1&&day<=6)isOpen=(mins>=450&&mins<1140);// Mon-Sat 7:30-19:00
   else if(day===0)isOpen=(mins>=840&&mins<1140);// Sun 14:00-19:00
   const badge=document.getElementById('openBadge');
-  badge.innerHTML=`<span class="open-now-badge ${isOpen?'open':'closed'}"><span class="open-dot"></span>${isOpen?'Open Now':'Closed Now — Opens ${day===0?'2:00 PM':'7:30 AM'}'}</span>`;
+  const opensAt=day===0?'2:00 PM':'7:30 AM';const statusText=isOpen?'Open Now':'Closed Now — Opens '+opensAt;badge.innerHTML='<span class="open-now-badge '+(isOpen?'open':'closed')+'"><span class="open-dot"></span>'+statusText+'</span>';
 })();
 
 /* ── LIGHTBOX ── */
