@@ -1,5 +1,6 @@
 .git
+.git/**
+*.pack
+*.idx
 node_modules
-.gitignore
-.DS_Store
-*.md
+node_modules/**
