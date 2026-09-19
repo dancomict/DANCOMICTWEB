@@ -17,8 +17,8 @@
 <meta name="twitter:description" content="Fast, reliable, and affordable ICT training, printing, government services, branding and more — all under one roof in Rumuruti, Laikipia County."/>
 <meta name="twitter:image" content="https://dancomict.co.ke/images/DANCOM-banner.jpg"/>
 <link rel="canonical" href="https://dancomict.co.ke"/>
-<link rel="icon" type="image/png" href="Navy-Logo-Landscape.png.png"/>
-<link rel="apple-touch-icon" href="Navy-Logo-Landscape.png.png"/>
+<link rel="icon" type="image/png" href="images/Navy-Logo-Landscape.png"/>
+<link rel="apple-touch-icon" href="images/Navy-Logo-Landscape.png"/>
 <link rel="preload" as="image" href="images/DANCOMICT-BANNER-2026-AI-POWERED.jpg"/>
 <script type="application/ld+json">
 {
@@ -187,7 +187,7 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 .img-mq-wrap::before,.img-mq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
 .img-mq-wrap::before{left:0;background:linear-gradient(90deg,var(--dark),transparent)}
 .img-mq-wrap::after{right:0;background:linear-gradient(-90deg,var(--dark),transparent)}
-.img-mq{display:flex;gap:12px;animation:imgscroll 38s linear infinite;width:max-content}
+.img-mq{display:flex;gap:12px;animation:imgscroll 60s linear infinite;width:max-content}
 .img-mq:hover{animation-play-state:paused}
 .img-mq img{height:155px;width:215px;object-fit:cover;border-radius:10px;opacity:.92;transition:opacity .3s,transform .3s;border:2px solid rgba(255,209,0,.22);cursor:pointer}
 .img-mq img:hover{opacity:1;transform:scale(1.05);border-color:var(--yellow)}
@@ -197,7 +197,7 @@ nav.main-nav{position:sticky;top:0;z-index:500;background:var(--white);border-bo
 .portfolio-strip-wrap::before,.portfolio-strip-wrap::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
 .portfolio-strip-wrap::before{left:0;background:linear-gradient(90deg,var(--blue-pale),transparent)}
 .portfolio-strip-wrap::after{right:0;background:linear-gradient(-90deg,var(--blue-pale),transparent)}
-.portfolio-strip{display:flex;gap:10px;animation:imgscroll 28s linear infinite;width:max-content}
+.portfolio-strip{display:flex;gap:10px;animation:imgscroll 50s linear infinite;width:max-content}
 .portfolio-strip:hover{animation-play-state:paused}
 .portfolio-strip img{height:120px;width:160px;object-fit:cover;border-radius:8px;border:2px solid rgba(10,36,114,.1);cursor:pointer;transition:all .3s}
 .portfolio-strip img:hover{border-color:var(--yellow);transform:scale(1.05)}
@@ -531,7 +531,7 @@ footer ul a:hover{color:var(--yellow)}
 <!-- NAV -->
 <nav class="main-nav">
   <a href="#hero" class="nav-logo">
-    <img src="Navy-Logo-sqr.png" alt="DANCOM ICT Centre" width="170" height="54" fetchpriority="high"/>
+    <img src="logo1.png" alt="DANCOM ICT Centre" width="170" height="54" fetchpriority="high"/>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
@@ -596,6 +596,11 @@ footer ul a:hover{color:var(--yellow)}
         <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="600" height="450" loading="lazy"/>
         <div class="slide-caption">Creative Marketing Solutions</div>
       </div>
+      <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('images/Dancom-Exterior002.jpg')"></div>
+        <img src="images/Dancom-Exterior002.jpg" alt="DANCOM Exterior 2" width="600" height="450" loading="lazy"/>
+        <div class="slide-caption">DANCOM — Serving Laikipia County</div>
+      </div>
       <div class="slide-dots" id="sDots"></div>
       <button class="slide-arrow prev" onclick="changeSlide(-1)">&#8249;</button>
       <button class="slide-arrow next" onclick="changeSlide(1)">&#8250;</button>
@@ -651,9 +656,13 @@ footer ul a:hover{color:var(--yellow)}
   </div>
 </div>
 
-<!-- IMAGE MARQUEE -->
+<!-- ═══════════════════════════════════════════
+     IMAGE MARQUEE — Full gallery scroll strip
+     All images from /images/ folder included
+════════════════════════════════════════════ -->
 <div class="img-mq-wrap" aria-hidden="true">
   <div class="img-mq" id="iMarq">
+    <!-- SET 1 -->
     <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/DANCOM-CALENDER-2026.jpg" alt="DANCOM Calendar 2026" width="215" height="155" loading="lazy" onclick="lb(this)"/>
@@ -675,9 +684,27 @@ footer ul a:hover{color:var(--yellow)}
     <img src="images/Dancom-Exterior002.jpg" alt="DANCOM Exterior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Gaming_zone.webp" alt="Gaming Zone" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Workshop1.jpg" alt="Workshop" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop2.webp" alt="Workshop 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop3.jpg" alt="Workshop 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Interior-2.jpg" alt="Centre Interior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/interior3.jpg" alt="Centre Interior 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Huge_Banner001.webp" alt="Huge Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Dancom_cap.jpg" alt="DANCOM Cap" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Class_Interior.webp" alt="Training Room" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Cert_Canva.jpg" alt="Certificate Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/counter-3.jpg" alt="Service Counter" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (1).jpg" alt="Branding Work 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (2).jpg" alt="Branding Work 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (3).jpg" alt="Branding Work 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Field-branding (1).jpg" alt="Field Branding 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Field-branding (2).jpg" alt="Field Branding 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (1).jpg" alt="Repair Job 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (6).jpg" alt="Repair Job 6" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (10).jpg" alt="Repair Job 10" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (15).jpg" alt="Repair Job 15" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop4.webp" alt="Workshop 4" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop5.jpg" alt="Workshop 5" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <!-- SET 2 — duplicate for seamless loop -->
     <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Dancom-marketing-solutions.jpg" alt="DANCOM Marketing Solutions" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/DANCOM-CALENDER-2026.jpg" alt="DANCOM Calendar 2026" width="215" height="155" loading="lazy" onclick="lb(this)"/>
@@ -690,6 +717,35 @@ footer ul a:hover{color:var(--yellow)}
     <img src="images/Modern-CV-design.jpg" alt="CV Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Dancom-cream.png" alt="DANCOM Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
     <img src="images/Dancom-layout.png" alt="DANCOM Layout" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design1.jpg" alt="Artwork Design 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design2.webp" alt="Artwork Design 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design3.webp" alt="Artwork Design 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design4.webp" alt="Artwork Design 4" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design5.webp" alt="Artwork Design 5" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Artworks_Design6.webp" alt="Artwork Design 6" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom-Exterior002.jpg" alt="DANCOM Exterior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Gaming_zone.webp" alt="Gaming Zone" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop1.jpg" alt="Workshop" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop2.webp" alt="Workshop 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop3.jpg" alt="Workshop 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Interior-2.jpg" alt="Centre Interior" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/interior3.jpg" alt="Centre Interior 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Huge_Banner001.webp" alt="Huge Banner" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Dancom_cap.jpg" alt="DANCOM Cap" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Class_Interior.webp" alt="Training Room" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Cert_Canva.jpg" alt="Certificate Design" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/counter-3.jpg" alt="Service Counter" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (1).jpg" alt="Branding Work 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (2).jpg" alt="Branding Work 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Branding-Designwork (3).jpg" alt="Branding Work 3" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Field-branding (1).jpg" alt="Field Branding 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Field-branding (2).jpg" alt="Field Branding 2" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (1).jpg" alt="Repair Job 1" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (6).jpg" alt="Repair Job 6" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (10).jpg" alt="Repair Job 10" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Repair-maintainance (15).jpg" alt="Repair Job 15" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop4.webp" alt="Workshop 4" width="215" height="155" loading="lazy" onclick="lb(this)"/>
+    <img src="images/Workshop5.jpg" alt="Workshop 5" width="215" height="155" loading="lazy" onclick="lb(this)"/>
   </div>
 </div>
 
@@ -733,11 +789,12 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">📲</div><h3>Digital Marketing</h3><p>SEO, social media management, digital campaigns, and PR.</p><span class="ctag amber">Monthly packages</span></div>
   </div>
 
-  <!-- BRANDING PORTFOLIO STRIP -->
+  <!-- ═══════════ BRANDING PORTFOLIO STRIP ═══════════ -->
   <div class="reveal" style="margin-bottom:40px">
     <p style="font-size:.8rem;font-weight:700;color:var(--blue-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">🎨 Sample Branding Work — Hover to Pause</p>
     <div class="portfolio-strip-wrap">
       <div class="portfolio-strip">
+        <!-- SET 1 -->
         <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/K-law-Tshirt.png" alt="K-Law Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Jayson-Jersey.jpg" alt="Branded Jersey" width="160" height="120" loading="lazy" onclick="lb(this)"/>
@@ -746,14 +803,12 @@ footer ul a:hover{color:var(--yellow)}
         <img src="images/Branding001.jpg" alt="Branding Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar Design 2026" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar Design 2025" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/K-law-Tshirt.png" alt="K-Law Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/Jayson-Jersey.jpg" alt="Branded Jersey" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/Modern-CV-design.jpg" alt="CV Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/Branding-Design.jpg" alt="Branding Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/Branding001.jpg" alt="Branding Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar Design 2026" width="160" height="120" loading="lazy" onclick="lb(this)"/>
-        <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar Design 2025" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design1.jpg" alt="Artwork 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design2.webp" alt="Artwork 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design3.webp" alt="Artwork 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design4.webp" alt="Artwork 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design5.webp" alt="Artwork 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Artworks_Design6.webp" alt="Artwork 6" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Branding-Designwork (1).jpg" alt="Branding Work 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Branding-Designwork (2).jpg" alt="Branding Work 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Branding-Designwork (3).jpg" alt="Branding Work 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
@@ -761,12 +816,39 @@ footer ul a:hover{color:var(--yellow)}
         <img src="images/Branding-Designwork (5).jpg" alt="Branding Work 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Branding-Designwork (6).jpg" alt="Branding Work 6" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Branding-Designwork (7).jpeg" alt="Branding Work 7" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Field-branding (1).jpg" alt="Field Branding 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Field-branding (2).jpg" alt="Field Branding 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Field-branding (3).jpg" alt="Field Branding 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Field-branding (4).jpg" alt="Field Branding 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-costs (1).jpg" alt="Branding Costs 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-costs (2).jpg" alt="Branding Costs 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-costs (3).jpg" alt="Branding Costs 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-costs (4).jpg" alt="Branding Costs 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-costs (5).jpg" alt="Branding Costs 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Dancom_cap.jpg" alt="DANCOM Cap" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Huge_Banner001.webp" alt="Huge Banner" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <!-- SET 2 — duplicate for seamless loop -->
+        <img src="images/Jaysons-Tshirt.webp" alt="Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/K-law-Tshirt.png" alt="K-Law Branded T-shirt" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Jayson-Jersey.jpg" alt="Branded Jersey" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Modern-CV-design.jpg" alt="CV Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Design.jpg" alt="Branding Design" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding001.jpg" alt="Branding Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar Design 2026" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar Design 2025" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design1.jpg" alt="Artwork 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design2.webp" alt="Artwork 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design3.webp" alt="Artwork 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design4.webp" alt="Artwork 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design5.webp" alt="Artwork 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Artworks_Design6.webp" alt="Artwork 6" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (1).jpg" alt="Branding Work 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (2).jpg" alt="Branding Work 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (3).jpg" alt="Branding Work 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (4).jpg" alt="Branding Work 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (5).jpg" alt="Branding Work 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (6).jpg" alt="Branding Work 6" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Branding-Designwork (7).jpeg" alt="Branding Work 7" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Field-branding (1).jpg" alt="Field Branding 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Field-branding (2).jpg" alt="Field Branding 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Field-branding (3).jpg" alt="Field Branding 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
@@ -800,11 +882,12 @@ footer ul a:hover{color:var(--yellow)}
     <div class="card"><div class="card-icon">🔬</div><h3>Micro-Soldering &amp; PCB Repair</h3><p>Advanced motherboard-level repairs, component replacement, PCB diagnostics, and micro-soldering for complex faults.</p><span class="ctag amber">Advanced</span></div>
   </div>
 
-  <!-- REPAIR PORTFOLIO STRIP -->
+  <!-- ═══════════ REPAIR PORTFOLIO STRIP ═══════════ -->
   <div class="reveal" style="margin-bottom:16px">
     <p style="font-size:.8rem;font-weight:700;color:var(--blue-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">🔧 Recent Repair Jobs — Hover to Pause</p>
     <div class="portfolio-strip-wrap">
       <div class="portfolio-strip">
+        <!-- SET 1 -->
         <img src="images/Repair-maintainance.jpg" alt="Repair Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/PC-maintenance.jpg" alt="PC Maintenance" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/linux.jpg" alt="Linux Setup" width="160" height="120" loading="lazy" onclick="lb(this)"/>
@@ -832,12 +915,34 @@ footer ul a:hover{color:var(--yellow)}
         <img src="images/Workshop3.jpg" alt="Workshop 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Workshop4.webp" alt="Workshop 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Workshop5.jpg" alt="Workshop 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <!-- SET 2 — duplicate for seamless loop -->
         <img src="images/Repair-maintainance.jpg" alt="Repair Work" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/PC-maintenance.jpg" alt="PC Maintenance" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/linux.jpg" alt="Linux Setup" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Laptop-advert.jpeg" alt="Laptop Repair" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Counter.jpg" alt="Service Counter" width="160" height="120" loading="lazy" onclick="lb(this)"/>
         <img src="images/Counter-2.jpg" alt="Centre Interior" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (1).jpg" alt="Repair Job 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (2).jpg" alt="Repair Job 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (3).jpg" alt="Repair Job 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (6).jpg" alt="Repair Job 6" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (7).jpg" alt="Repair Job 7" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (8).jpg" alt="Repair Job 8" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (9).jpg" alt="Repair Job 9" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (10).jpg" alt="Repair Job 10" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (11).jpg" alt="Repair Job 11" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (12).jpg" alt="Repair Job 12" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (13).jpg" alt="Repair Job 13" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (14).jpg" alt="Repair Job 14" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (15).jpg" alt="Repair Job 15" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (16).jpg" alt="Repair Job 16" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (17).jpg" alt="Repair Job 17" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Repair-maintainance (18).jpg" alt="Repair Job 18" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Workshop1.jpg" alt="Workshop 1" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Workshop2.webp" alt="Workshop 2" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Workshop3.jpg" alt="Workshop 3" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Workshop4.webp" alt="Workshop 4" width="160" height="120" loading="lazy" onclick="lb(this)"/>
+        <img src="images/Workshop5.jpg" alt="Workshop 5" width="160" height="120" loading="lazy" onclick="lb(this)"/>
       </div>
     </div>
   </div>
@@ -1068,8 +1173,10 @@ footer ul a:hover{color:var(--yellow)}
       <div class="team-role">Managing Director</div>
       <p>Oversees daily operations, quality assurance, and client satisfaction across all service lines.</p>
     </div>
+    <!-- SAM — real photo now -->
     <div class="team-card reveal">
-    <img class="team-avatar" src="images/Egn_Sam_Waigwa_Main.jpg" alt="Egn. Sam Waigwa" width="88" height="88" loading="lazy" onerror="this.style.display='none'"/>  
+      <img class="team-avatar" src="images/Egn_Sam_Waigwa_Main.jpg" alt="Egn. Sam Waigwa" width="88" height="88" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="team-initials" style="background:linear-gradient(135deg,#16a34a,#22c55e);display:none">SW</div>
       <h3>Egn. Sam Waigwa.</h3>
       <div class="team-role">Associate</div>
       <p>Supports service delivery and technical operations, ensuring seamless output for every client order.</p>
@@ -1092,7 +1199,9 @@ footer ul a:hover{color:var(--yellow)}
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- ═══════════════════════════════════════════
+     GALLERY — Expanded with all new images
+════════════════════════════════════════════ -->
 <section id="gallery">
   <div class="section-center reveal">
     <div class="section-label">Gallery</div>
@@ -1100,6 +1209,7 @@ footer ul a:hover{color:var(--yellow)}
     <p class="section-sub" style="color:rgba(255,255,255,.6)">A glimpse into DANCOM — our team, designs, and the community we proudly serve. Tap any image to enlarge.</p>
   </div>
   <div class="gallery-grid reveal">
+    <!-- Row 1 -->
     <div class="gal-item wide" onclick="lb(this.querySelector('img'))">
       <img src="images/DANCOM-banner.jpg" alt="DANCOM ICT Centre Banner" width="430" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>DANCOM ICT Centre</span></div>
@@ -1112,6 +1222,32 @@ footer ul a:hover{color:var(--yellow)}
       <img src="images/Counter-2.jpg" alt="Centre Interior" width="215" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>Centre Interior</span></div>
     </div>
+    <!-- Row 2 -->
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Dancom-Exterior002.jpg" alt="DANCOM Exterior" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Our Premises</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Class_Interior.webp" alt="Training Room" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Training Room</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Interior-2.jpg" alt="Interior 2" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Centre Interior</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/interior3.jpg" alt="Interior 3" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Centre Interior</span></div>
+    </div>
+    <!-- Row 3 -->
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Gaming_zone.webp" alt="Gaming Zone" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Gaming Zone</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/counter-3.jpg" alt="Counter 3" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Service Counter</span></div>
+    </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
       <img src="images/Dancom-marketing-solutions.jpg" alt="Marketing Solutions" width="215" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>Marketing Solutions</span></div>
@@ -1120,6 +1256,7 @@ footer ul a:hover{color:var(--yellow)}
       <img src="images/DANCOM-CALENDER-2026.jpg" alt="Calendar 2026" width="215" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>Calendar 2026 Design</span></div>
     </div>
+    <!-- Row 4 -->
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
       <img src="images/dancom-calender-2025-finale.jpg" alt="Calendar 2025" width="215" height="215" loading="lazy"/>
       <div class="gal-overlay"><span>Calendar 2025 Design</span></div>
@@ -1133,37 +1270,56 @@ footer ul a:hover{color:var(--yellow)}
       <div class="gal-overlay"><span>ICT Hub</span></div>
     </div>
     <div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/Dancom-Exterior002.jpg" alt="DANCOM Exterior 2" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Our Premises</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/Class_Interior.webp" alt="Class Interior" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Training Room</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/Interior-2.jpg" alt="Interior 2" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Centre Interior</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/interior3.jpg" alt="Interior 3" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Centre Interior</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/counter-3.jpg" alt="Counter 3" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Service Counter</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/Gaming_zone.webp" alt="Gaming Zone" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Gaming Zone</span></div>
-</div>
-<div class="gal-item" onclick="lb(this.querySelector('img'))">
-  <img src="images/Cert_Canva.jpg" alt="Certificate Design" width="215" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Certificate Design</span></div>
-</div>
-<div class="gal-item wide" onclick="lb(this.querySelector('img'))">
-  <img src="images/Huge_Banner001.webp" alt="Large Format Banner" width="430" height="215" loading="lazy"/>
-  <div class="gal-overlay"><span>Large Format Printing</span></div>
-</div>
+      <img src="images/Cert_Canva.jpg" alt="Certificate Design" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Certificate Design</span></div>
+    </div>
+    <!-- Row 5 — wide banner + workshops -->
+    <div class="gal-item wide" onclick="lb(this.querySelector('img'))">
+      <img src="images/Huge_Banner001.webp" alt="Large Format Banner" width="430" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Large Format Printing</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Workshop1.jpg" alt="Workshop 1" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Workshop</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Workshop3.jpg" alt="Workshop 3" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Workshop</span></div>
+    </div>
+    <!-- Row 6 -->
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Workshop5.jpg" alt="Workshop 5" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Workshop</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Artworks_Design1.jpg" alt="Artwork Design 1" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Artwork Design</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Artworks_Design2.webp" alt="Artwork Design 2" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Artwork Design</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Artworks_Design3.webp" alt="Artwork Design 3" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Artwork Design</span></div>
+    </div>
+    <!-- Row 7 -->
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Dancom_logo_luminous.jpg" alt="DANCOM Luminous Logo" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>DANCOM Luminous Logo</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/3D-LOGO.jpg" alt="3D Logo" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>3D Logo Design</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Egn_Sam_Waigwa1.jpg" alt="Sam Waigwa" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Team — Egn. Sam Waigwa</span></div>
+    </div>
+    <div class="gal-item" onclick="lb(this.querySelector('img'))">
+      <img src="images/Egn_Sam_Waigwa2.jpg" alt="Sam Waigwa 2" width="215" height="215" loading="lazy"/>
+      <div class="gal-overlay"><span>Team — Egn. Sam Waigwa</span></div>
+    </div>
   </div>
 </section>
 
@@ -1203,7 +1359,7 @@ footer ul a:hover{color:var(--yellow)}
       <img src="images/ICT-hub.jpg" alt="ICT Hub" width="200" height="200" loading="lazy" onclick="lb(this)"/>
       <img src="images/Counter.jpg" alt="Service Counter" width="200" height="200" loading="lazy" onclick="lb(this)"/>
       <img src="images/Daniel-migwi-kanyoro-ppt.jpg" alt="CEO Daniel Migwi" width="200" height="200" loading="lazy" onclick="lb(this)"/>
-      <img src="images/DANCOM-banner.jpg" alt="DANCOM Banner" width="200" height="200" loading="lazy" onclick="lb(this)"/>
+      <img src="images/Egn_Sam_Waigwa_Main.jpg" alt="Egn. Sam Waigwa" width="200" height="200" loading="lazy" onclick="lb(this)"/>
     </div>
     <a href="https://g.co/kgs/3c8EFh2" target="_blank" rel="noopener" class="btn-yellow" style="display:inline-flex;margin:0 auto">📍 View All Photos on Google →</a>
   </div>
@@ -1529,7 +1685,7 @@ const ro=new IntersectionObserver(es=>{
 },{threshold:.09});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-/* ── STAT COUNTERS — on page load ── */
+/* ── STAT COUNTERS ── */
 function animateCounter(el,target,suffix){
   const dur=2000,step=target/dur*16;
   let val=0;
