@@ -456,7 +456,7 @@ footer ul a:hover{color:var(--yellow)}
 @keyframes wa-pulse{0%,100%{box-shadow:0 4px 16px rgba(37,211,102,.4)}50%{box-shadow:0 4px 28px rgba(37,211,102,.7),0 0 0 8px rgba(37,211,102,.15)}}
 
 /* ══ BACK TO TOP ══ */
-.back-top{position:fixed;bottom:22px;right:22px;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--blue);border:none;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:400;opacity:0;transform:translateY(10px);transition:all .3s;box-shadow:0 4px 16px rgba(255,209,0,.4);font-weight:700}
+.back-top{position:fixed;bottom:100px;right:22px;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--blue);border:none;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:400;opacity:0;transform:translateY(10px);transition:all .3s;box-shadow:0 4px 16px rgba(255,209,0,.4);font-weight:700}
 .back-top.show{opacity:1;transform:translateY(0)}
 .back-top:hover{transform:translateY(-3px) scale(1.08)}
 
@@ -1349,14 +1349,11 @@ footer ul a:hover{color:var(--yellow)}
         <h3>TikTok — @dancomictcentre</h3>
         <a href="https://www.tiktok.com/@dancomictcentre" target="_blank" rel="noopener">Follow →</a>
       </div>
-      <div class="social-card-body" style="text-align:center">
-        <blockquote class="tiktok-embed"
-          cite="https://www.tiktok.com/@dancomictcentre"
-          data-unique-id="dancomictcentre"
-          data-embed-type="creator"
-          style="max-width:100%;min-width:288px;border-radius:10px;overflow:hidden">
-          <section><a target="_blank" href="https://www.tiktok.com/@dancomictcentre?refer=creator_embed">@dancomictcentre</a></section>
-        </blockquote>
+           <div class="social-card-body" style="text-align:center;padding:28px 20px">
+        <div style="font-size:2.4rem;margin-bottom:8px">🎵</div>
+        <h3 style="font-size:1rem;color:var(--blue);margin-bottom:6px">Watch DANCOM on TikTok</h3>
+        <p style="font-size:.86rem;color:var(--gray);line-height:1.65;margin-bottom:16px">Short videos of our training, repairs, branding work and daily updates from Rumuruti.</p>
+        <a href="https://www.tiktok.com/@dancomictcentre" target="_blank" rel="noopener" class="btn-yellow">Open @dancomictcentre on TikTok →</a>
       </div>
     </div>
   </div>
@@ -1805,8 +1802,6 @@ function handleSubmit(e){
   setTimeout(()=>{window.open('https://wa.me/254795312248?text='+text,'_blank')},600);
 }
 </script>
-
-<script async defer src="https://www.tiktok.com/embed.js"></script>
 <div id="fb-root"></div>
 <script>
 window.fbAsyncInit=function(){if(window.FB)FB.init({xfbml:1,version:'v18.0'})};
